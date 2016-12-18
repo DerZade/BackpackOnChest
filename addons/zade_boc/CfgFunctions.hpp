@@ -29,6 +29,7 @@ class CfgFunctions
 			class EHAnimDone {};
 			class EHGetIn {};
 			class EHGetOut {};
+			class EHHandleDisconnect {};
 			class EHKilled {};
 			class moduleAdd {};
 			class moduleOnChest {};

@@ -3,11 +3,11 @@
  * Adds a chestpack to a unit. If a unit already has one, the old chestpack will be ignored and will be deleted completely.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: backpack classname <STRING>
+ * 0: Unit  <OBJECT>
+ * 1: Backpack Classnam <STRING>
  *
  * Return Value:
- * nothing
+ * Nothing
  *
  * Example:
  * [player,"B_Kitbag_rgr"] call zade_boc_fnc_addChestpack;
@@ -17,6 +17,13 @@
 params ["_unit","_chestpackClass"];
 
 if (isNil "_unit" or isNil "_chestpackClass") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
+
+//add HandleDisconnect-EH on server if not done yet
+if !(missionNamespace getVariable ["zade_boc_HDCEHadded",false]) then {
+     [[[],{addMissionEventHandler ["HandleDisconnect",zade_boc_fnc_EHHandleDisconnect];}],"BIS_fnc_call",false] call BIS_fnc_MP;
+     zade_boc_HDCEHadded = true;
+     publicVariable "zade_boc_HDCEHadded";
+};
 
 //delete existing chestpack, if there is one
 if ([_unit] call zade_boc_fnc_chestpack != "") then {
@@ -38,7 +45,7 @@ _unit forceWalk true;
 _unit setVariable ["zade_boc_chestpack",[[_chestpackClass,_chestpack],[_getInID,_getOutID,_animID,_killedID],[],[]],true];
 
 //execute vehicle shit
-if (vehicle _unit != _unit) then {
+if !(vehicle _unit isEqualTo _unit) then {
 	[_unit, "", vehicle _unit] call zade_boc_fnc_EHGetIn;
 } else {
 	[_unit, "", objNull] call zade_boc_fnc_EHGetOut;

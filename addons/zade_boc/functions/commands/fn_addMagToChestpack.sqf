@@ -5,12 +5,12 @@
  * If you want to add a/multiple full magazine(s) you may want to use 'zade_boc_addItemToChestpack' instead.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: classname <STRING>
- * 2: ammo count <NUMBER>
+ * 0: Unit <OBJECT>
+ * 1: Classname <STRING>
+ * 2: Ammo count <NUMBER>
  *
  * Return Value:
- * nothing
+ * Nothing
  *
  * Example:
  * [player,"30Rnd_556x45_Stanag",25] call zade_boc_fnc_addMagToChestpack;

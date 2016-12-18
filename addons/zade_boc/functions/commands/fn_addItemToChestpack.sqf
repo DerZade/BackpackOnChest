@@ -4,12 +4,12 @@
  * The item(s) won't be added, if adding them would cause an overflow of the backpack.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: item/magazine/weapon classname <STRING>
- * 2: amount <NUMBER> (optional | default: 1)
+ * 0: Unit <OBJECT>
+ * 1: Item/magazine/weapon classname <STRING>
+ * 2: Amount <NUMBER> (optional | default: 1)
  *
  * Return Value:
- * nothing
+ * Nothing
  *
  * Example:
  * [player,"FirstAidKit"] call zade_boc_fnc_addItemToChestpack;
