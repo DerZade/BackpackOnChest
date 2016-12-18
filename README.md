@@ -1,4 +1,4 @@
-# Backpack On Chest
+# BackpackOnChest
 BackpackOnChest is a mod, which adds the functionality of carrying an extra backpack on your chest.
 
 Head over to the wiki for a full documentation of all modules and functions.
