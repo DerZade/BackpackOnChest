@@ -1,0 +1,12 @@
+name = "Zade BackpackOnChest";
+picture = "logo_boc_ca.paa";
+actionName = "BI Forums";
+action = "http://forums.bistudio.com/showthread.php?192196-Zade-s-Backpack-on-Chest";
+description = "BOC - Version 1.0";
+logo = "logo_boc_ca.paa";
+logoOver = "logo_boc_ca.paa";
+tooltip = "BOC";
+tooltipOwned = "Owned by DerZade";
+overview = "BackpackOnChest is a mod, which adds the functionality of carrying an extra backpack on your chest.";
+author = "DerZade";
+overviewPicture = "logo_boc_ca.paa";
