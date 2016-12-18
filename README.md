@@ -3,5 +3,5 @@ BackpackOnChest is a mod, which adds the functionality of carrying an extra back
 
 Head over to the wiki for a full documentation of all modules and functions.
 
-Github: https://github.com/DerZade/BackpackOnChest
+Github: https://github.com/DerZade/BackpackOnChest   
 Wiki: https://github.com/DerZade/BackpackOnChest/wiki
