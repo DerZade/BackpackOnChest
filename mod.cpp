@@ -1,7 +1,7 @@
-name = "Zade BackpackOnChest";
+name = "Backpack On Chest";
 picture = "logo_boc_ca.paa";
-actionName = "BI Forums";
-action = "http://forums.bistudio.com/showthread.php?192196-Zade-s-Backpack-on-Chest";
+actionName = "GITHUB";
+action = "https://github.com/DerZade/BackpackOnChest";
 description = "BOC - Version 1.0";
 logo = "logo_boc_ca.paa";
 logoOver = "logo_boc_ca.paa";
