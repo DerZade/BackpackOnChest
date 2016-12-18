@@ -1,4 +1,4 @@
-name = "Backpack On Chest";
+name = "BackpackOnChest";
 picture = "logo_boc_ca.paa";
 actionName = "GITHUB";
 action = "https://github.com/DerZade/BackpackOnChest";
