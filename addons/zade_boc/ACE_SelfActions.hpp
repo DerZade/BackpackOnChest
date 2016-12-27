@@ -2,7 +2,7 @@ class zade_boc_onChest
 {
      displayName = $STR_zade_boc_OnChest;
      condition = "!(missionNamespace getVariable ['zade_boc_disabled',false]) && !(backpack _player isEqualTo '') && ([_player] call zade_boc_fnc_chestpack isEqualTo '')";
-     exceptions[] = {"notOnMap", "isNotSitting"};
+     exceptions[] = {"isNotInside"};
      statement = "[_player] call zade_boc_fnc_actionOnChest";
      showDisabled = 0;
      priority = 2.5;
