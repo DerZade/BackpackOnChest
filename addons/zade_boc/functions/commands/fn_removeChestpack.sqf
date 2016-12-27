@@ -32,3 +32,4 @@ _unit forceWalk false;
 
 //reset variable
 _unit setVariable ["zade_boc_chestpack",nil,true];
+_unit setVariable ["zade_boc_radioSettings",nil,true];

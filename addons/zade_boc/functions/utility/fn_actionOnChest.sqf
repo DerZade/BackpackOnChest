@@ -45,4 +45,6 @@ private _backpackmags = [_player] call zade_boc_fnc_backpackMagazines;
      };
 } forEach _backpackmags;
 
+//copy radio settings and remove backpack
+[_player] call zade_boc_fnc_copyRadioSettings;
 removeBackpackGlobal _player;
