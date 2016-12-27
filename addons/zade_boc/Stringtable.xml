@@ -6,31 +6,37 @@
 				<Original>Prohibit BackpackOnChest</Original>
 				<English>Prohibit BackpackOnChest</English>
 				<German>BackpackOnChest verbieten</German>
+				<Japanese>BackpackOnChest を制限</Japanese>
 			</Key>
                <Key ID="str_zade_boc_moduleDisable_desc">
 				<Original>Placing this module will prohibit the use of BackpackOnChest.</Original>
 				<English>Placing this module will prohibit the use of BackpackOnChest.</English>
 				<German>Verbietet das benutzen von BackpackOnChest.</German>
+				<Japanese>モジュールにより BackpackOnChest の使用を制限します。</Japanese>
 			</Key>
 			<Key ID="str_zade_boc_moduleAdd_disp">
 				<Original>Add Chestpack</Original>
 				<English>Add Chestpack</English>
 				<German>Chestpack hinzufügen</German>
+				<Japanese>チェストパック追加</Japanese>
 			</Key>
 			<Key ID="str_zade_boc_moduleAdd_desc">
 				<Original>Adds a chestpack (with invenory) to all syncronized Units.</Original>
 				<English>Adds a chestpack (with invenory) to all syncronized Units.</English>
 				<German>Fügt einen Chestpack allen syncronisierten Einheiten hinzu.</German>
+				<Japanese>同期された全ユニットにチェストパック(インベントリ付)を追加します。</Japanese>
 			</Key>
 			<Key ID="str_zade_boc_moduleOnChest_disp">
 				<Original>Backpack on Chest</Original>
 				<English>Backpack on Chest</English>
 				<German>Rucksack auf den Bauck</German>
+				<Japanese>前側にバックパック</Japanese>
 			</Key>
 			<Key ID="str_zade_boc_moduleOnChest_desc">
 				<Original>Puts current backpack on the chest.</Original>
 				<English>Puts current backpack on the chest.</English>
 				<German>Schnallt den aktuellen Rucksack auf den Bauch.</German>
+				<Japanese>現在のバックパックを前側に置きます。</Japanese>
 			</Key>
 		</Container>
 		<Container name="UI">
@@ -38,16 +44,19 @@
 					<Original>Put backpack on chest</Original>
 					<English>Put backpack on chest</English>
 					<German>Rucksack auf den Bauch schnallen</German>
+					<Japanese>バックパックを前側にする</Japanese>
 				</Key>
 				<Key ID="str_zade_boc_OnBack">
 					<Original>Put backpack on back</Original>
 					<English>Put backpack on back</English>
 					<German>Rucksack auf den Rücken</German>
+					<Japanese>バックパックを後ろ側にする</Japanese>
 				</Key>
 				<Key ID="str_zade_boc_Swap">
 					<Original>Swap rucksacks</Original>
 					<English>Swap rucksacks</English>
 					<German>Rucksäcke tauschen</German>
+					<Japanese>バックパックを入れ替え</Japanese>
 				</Key>
 		</Container>
 	</Package>
