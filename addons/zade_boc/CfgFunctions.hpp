@@ -26,6 +26,7 @@ class CfgFunctions
 			class actionOnChest {};
 			class actionSwap {};
 			class backpackMagazines {};
+			class copyRadioSettings {};
 			class EHAnimDone {};
 			class EHGetIn {};
 			class EHGetOut {};
@@ -34,6 +35,7 @@ class CfgFunctions
 			class moduleAdd {};
 			class moduleOnChest {};
 			class moduleDisable {};
+			class pasteRadioSettings {};
 		};
 	};
 };
