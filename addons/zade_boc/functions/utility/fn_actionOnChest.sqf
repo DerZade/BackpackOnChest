@@ -1,7 +1,7 @@
 params ["_player"];
 
 private _backpack = backpack _player;
-private _backpackitems = (itemCargo (backpackContainer _player) + weaponCargo (backpackContainer _player));
+private _backpackitems = (itemCargo (backpackContainer _player) + weaponCargo (backpackContainer _player) + backpackCargo (backpackContainer _player));
 private _backpackmags = [_player] call zade_boc_fnc_backpackMagazines;
 
 //remove all mags out of items to prevent adding mags two times
@@ -24,9 +24,11 @@ private _backpackmags = [_player] call zade_boc_fnc_backpackMagazines;
      _backpackitems pushBack (_x select 5);
 
      //add magazine
-     private _mag = +(_x select 4);
-     _mag pushBack 1;
-     _backpackmags pushBack _mag;
+     if !((_x select 4) isEqualTo []) then {
+          private _mag = +(_x select 4);
+          _mag pushBack 1;
+          _backpackmags pushBack _mag;
+     };
 
 } forEach weaponsItems (backpackContainer _player);
 

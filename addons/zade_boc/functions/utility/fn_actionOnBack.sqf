@@ -10,7 +10,12 @@ _player addBackpackGlobal _chestpack;
 clearAllItemsFromBackpack _player;
 //add items
 {
-     _player addItemToBackpack _x;
+     //check wether item is a backpack
+     if (isClass (configFile>> "CfgVehicles" >> _x)) then {
+          (backpackContainer _player) addBackpackCargoGlobal [_x, 1];
+     } else {
+          _player addItemToBackpack _x;
+     };
 } forEach _chestpackitems;
 
 //add magazines
