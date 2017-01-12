@@ -43,7 +43,7 @@ class CfgVehicles
           function = "zade_boc_fnc_moduleAdd";
           functionPriority = 0;
           isGlobal = 0;
-          isTriggerActivated = 0;
+          isTriggerActivated = 1;
           isDisposable = 0;
           is3DEN = 0;
           author = "DerZade";
@@ -102,7 +102,7 @@ class CfgVehicles
           function = "zade_boc_fnc_moduleOnChest";
           functionPriority = 0;
           isGlobal = 0;
-          isTriggerActivated = 0;
+          isTriggerActivated = 1;
           isDisposable = 0;
           is3DEN = 0;
           author = "DerZade";
