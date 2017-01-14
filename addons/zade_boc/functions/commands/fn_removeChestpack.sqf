@@ -3,7 +3,7 @@
  * Removes unit's chestpack.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * Nothing

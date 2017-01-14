@@ -1,3 +1,18 @@
+/*
+ * Author: DerZade
+ * Triggered by the swap-action. Handles all the stuff.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * Nothing
+ *
+ * Example:
+ * [player] call zade_boc_fnc_actionSwap;
+ *
+ * Public: No
+ */
 params ["_player"];
 
 private _backpack = backpack _player;

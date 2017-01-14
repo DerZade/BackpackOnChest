@@ -4,10 +4,10 @@
  * were added with vanilla commands like 'addWeaponCargo' etc.  will be ignored. You have to use the provided functions instead.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * cargo container or objNull <OBJECT>
+ * Cargo container or objNull <OBJECT>
  *
  * Example:
  * [player] call zade_boc_fnc_chestpackContainer;

@@ -1,3 +1,18 @@
+/*
+ * Author: DerZade
+ * Copies the radio-settings of unit's backpack radio.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * Nothing
+ *
+ * Example:
+ * [player] call zade_boc_fnc_copyRadioSettings;
+ *
+ * Public: No
+ */
 params ["_player"];
 
 //only if TFAR is loaded

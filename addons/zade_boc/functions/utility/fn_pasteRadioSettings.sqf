@@ -1,3 +1,19 @@
+/*
+ * Author: DerZade
+ * Applies given radio-settings to the backpack radio of the unit.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ * 1: Radio-settings <Depending on used Radio-Modification>
+ *
+ * Return Value:
+ * Nothing
+ *
+ * Example:
+ * [player, player getVariable "zade_boc_radioSettings"] call zade_boc_fnc_pasteRadioSettings;
+ *
+ * Public: No
+ */
 params ["_player","_settings"];
 
 //only if TFAR is loaded

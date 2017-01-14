@@ -3,10 +3,10 @@
  * Returns array with all magazines from chestpack of the given unit.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * chestpack magazines <ARRAY> [classname,ammo count, amount of mags]
+ * Chestpack magazines <ARRAY> [classname,ammo count, amount of mags]
  *
  * Example:
  * [player] call zade_boc_fnc_chestpackMagazines;

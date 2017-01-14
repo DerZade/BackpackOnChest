@@ -3,7 +3,7 @@
  * Returns array with all items (of any kind, even weapons) in chestpack of the given unit.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  * 1: Return magazines aswell <BOOL> (optional | default: true)
  *
  * Return Value:

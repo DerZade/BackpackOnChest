@@ -3,10 +3,10 @@
  * Removes all items (includes weapons and magazines) from a unit's chestpack.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * nothing
+ * Nothing
  *
  * Example:
  * [player] call zade_boc_fnc_clearAllItemsFromChestpack;

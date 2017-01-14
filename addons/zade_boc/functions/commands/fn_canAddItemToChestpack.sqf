@@ -3,12 +3,12 @@
  * Checks if given item can be stored into soldier's chestpack.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: item/magazine/weapon classname <STRING>
- * 2: amount <NUMBER> (optional)
+ * 0: Unit <OBJECT>
+ * 1: Item/magazine/weapon classname <STRING>
+ * 2: Amount <NUMBER> (optional)
  *
  * Return Value:
- * can add item? <BOOL>
+ * Can add item? <BOOL>
  *
  * Example:
  * [player,"FirstAidKit",2] call zade_boc_fnc_canAddItemToChestpack;

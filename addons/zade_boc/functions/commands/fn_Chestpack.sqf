@@ -3,10 +3,10 @@
  * Returns the classname of a unit's chestpack.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * classname <STRING>
+ * Classname <STRING>
  *
  * Example:
  * [player] call zade_boc_fnc_chestpack;

@@ -1,3 +1,18 @@
+/*
+ * Author: DerZade
+ * Triggered by the onBack-action. Handles all the stuff.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * Nothing
+ *
+ * Example:
+ * [player] call zade_boc_fnc_actionOnBack;
+ *
+ * Public: No
+ */
 params ["_player"];
 
 private _chestpack = [_player] call zade_boc_fnc_chestpack;
