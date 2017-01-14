@@ -1,7 +1,7 @@
 /*
  * Author: DerZade
  * Removes magazine from unit's chestpack. The purpose of this function is to ensure that magazines with a specified ammo count can be removed.
- * If you want to remove a magazine with any amount of ammo you may want to use 'zade_boc_fnc_removeItemFromChestpack' instead.
+ * If you want to remove a magazine with just any amount of ammo you may want to use 'zade_boc_fnc_removeItemFromChestpack' instead.
  *
  * Arguments:
  * 0: Unit <OBJECT>
