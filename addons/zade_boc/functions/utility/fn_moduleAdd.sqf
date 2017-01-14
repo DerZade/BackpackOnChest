@@ -33,9 +33,9 @@ private _code = compile (_module getVariable "code");
           if (typeName _x isEqualTo "STRING") then {
                [_unit,_x] call zade_boc_fnc_addItemToChestpack;
           } else {
-               private _magClass = _x select 0;
-               private _magAmount = _x select 1;
-               [_unit,_magClass,_magAmount] call zade_boc_fnc_addItemToChestpack;
+               private _itemClass = _x select 0;
+               private _itemAmount = _x select 1;
+               [_unit,_itemClass,_itemAmount] call zade_boc_fnc_addItemToChestpack;
           };
      } forEach _items;
 

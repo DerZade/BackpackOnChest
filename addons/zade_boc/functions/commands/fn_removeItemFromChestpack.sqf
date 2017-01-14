@@ -1,13 +1,13 @@
 /*
  * Author: DerZade
- * Removes unit's chestpack.
+ * Removes item from unit's chestpack.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: item/magazine/weapon classname <STRING>
+ * 0: Unit <OBJECT>
+ * 1: Item/magazine/weapon classname <STRING>
  *
  * Return Value:
- * nothing
+ * Nothing
  *
  * Example:
  * [player,"FirstAidKit"] call zade_boc_fnc_removeItemFromChestpack;

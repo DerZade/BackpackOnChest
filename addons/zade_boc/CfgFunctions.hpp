@@ -18,6 +18,7 @@ class CfgFunctions
 			class loadChestpack {};
 			class removeChestpack {};
 			class removeItemFromChestpack {};
+			class removeMagFromChestpack {};
 		};
 		class utility
 		{
@@ -26,6 +27,7 @@ class CfgFunctions
 			class actionOnChest {};
 			class actionSwap {};
 			class backpackMagazines {};
+			class copyRadioSettings {};
 			class EHAnimDone {};
 			class EHGetIn {};
 			class EHGetOut {};
@@ -34,6 +36,7 @@ class CfgFunctions
 			class moduleAdd {};
 			class moduleOnChest {};
 			class moduleDisable {};
+			class pasteRadioSettings {};
 		};
 	};
 };
