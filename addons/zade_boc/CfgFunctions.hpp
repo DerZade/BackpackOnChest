@@ -18,6 +18,7 @@ class CfgFunctions
 			class loadChestpack {};
 			class removeChestpack {};
 			class removeItemFromChestpack {};
+			class removeMagFromChestpack {};
 		};
 		class utility
 		{
