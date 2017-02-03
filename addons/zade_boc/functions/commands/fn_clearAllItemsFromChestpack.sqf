@@ -15,8 +15,6 @@
  */
 params ["_unit"];
 
-if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 _var set [2,[]];
 _var set [3,[]];

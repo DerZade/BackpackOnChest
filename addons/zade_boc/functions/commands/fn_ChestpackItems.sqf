@@ -16,8 +16,6 @@
  */
 params ["_unit",["_returnMags",true]];
 
-if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _items = +(_var select 2);
 

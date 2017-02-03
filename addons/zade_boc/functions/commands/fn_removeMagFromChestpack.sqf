@@ -18,8 +18,6 @@
  */
 params ["_unit","_item","_ammo"];
 
-if (isNil "_unit" or isNil "_item" or isNil "_ammo") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
 //exit if there is no such item in chestpack
 if ((compile format ["(_x select 0) isEqualTo '%1' and (_x select 1) isEqualTo %2",_item,_ammo]) count ([_unit] call zade_boc_fnc_chestpackMagazines) isEqualTo 0) exitWith {};
 
