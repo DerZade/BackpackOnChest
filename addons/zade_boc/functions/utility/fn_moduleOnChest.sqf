@@ -23,10 +23,12 @@ _null = [_units,_backpackClass,_delay] spawn {
      params ["_units","_backpackClass","_delay"];
      sleep _delay;
      {
-          [_x] call zade_boc_fnc_actionOnChest;
+          if !((backpack _x) isEqualTo "") then {
+               [_x] call zade_boc_fnc_actionOnChest;
 
-          if (_backpackClass != "") then {
-               _x addBackpackGlobal _backpackClass;
+               if (_backpackClass != "") then {
+                    _x addBackpackGlobal _backpackClass;
+               };
           };
      } forEach _units;
 };
