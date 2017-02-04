@@ -18,8 +18,6 @@
  */
 params ["_unit","_item",["_amount",1]];
 
-if (isNil "_unit" or isNil "_item") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
 //exit if there is not enough space left
 if !([_unit,_item,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
 

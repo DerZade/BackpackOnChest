@@ -17,8 +17,6 @@
  */
 params ["_unit","_item",["_amount",1]];
 
-if (isNil "_unit" or isNil "_item") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
 //calculate space left in chestpack
 private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call zade_boc_fnc_chestpack) >> "maximumLoad") - ([_unit] call zade_boc_fnc_loadChestpack);
 

@@ -15,9 +15,6 @@
  */
 params ["_unit"];
 
-if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
-
 private _items = [_unit] call zade_boc_fnc_chestpackItems;
 private _mass = 0;
 

@@ -16,8 +16,6 @@
  */
 params ["_unit","_chestpackClass"];
 
-if (isNil "_unit" or isNil "_chestpackClass") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
-
 //add HandleDisconnect-EH on server if not done yet
 if !(missionNamespace getVariable ["zade_boc_HDCEHadded",false]) then {
      [[[],{addMissionEventHandler ["HandleDisconnect",zade_boc_fnc_EHHandleDisconnect];}],"BIS_fnc_call",false] call BIS_fnc_MP;

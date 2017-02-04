@@ -22,6 +22,6 @@ if (isNil "_unit" or isNil "_veh") exitWith {["No proper argument(s) given."] ca
 
 private _chestpack = [_unit] call zade_boc_fnc_chestpackContainer;
 
-detach _chestpack;
-hideObjectGlobal _chestpack;
-_chestpack setPos [-10000,-10000,-100];
+_chestpack remoteExec ["detach", 0];
+_chestpack remoteExec ["hideObjectGlobal", 0];
+[_chestpack, [-10000,-10000,-100]] remoteExec ["setPos", 0];
