@@ -10,6 +10,7 @@ Wiki: https://github.com/DerZade/BackpackOnChest/wiki
 - various modules and functions for misison creators ([wiki](https://github.com/DerZade/BackpackOnChest/wiki))
 - Implementation through ACE-SelfInteractionMenu
 - TFAR compatibility (radio settings are preserved)
-- preserving attachments/magazines of weapons in backpack during chest/back switch
+- preserving attachments/magazines of weapons
+- support for partially full magazines
 - full multiplayer compatibility (incl. JIP)
 - zeus compatibility
