@@ -10,7 +10,7 @@
     <a href="https://forums.bistudio.com/topic/181815-backpackonchest/">
         <img src="https://img.shields.io/badge/BIF-Thread-3c6994.svg?style=flat-square" alt="BIF Thread">
     </a>
-    <a href="https://github.com/DerZade/BackpackOnChest/issues/wiki">
+    <a href="https://github.com/DerZade/BackpackOnChest/wiki">
         <img src="https://img.shields.io/badge/GitHub-Wiki-d26911.svg?style=flat-square" alt="BIF Thread">
     </a>
 </p>
