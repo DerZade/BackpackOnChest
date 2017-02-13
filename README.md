@@ -27,6 +27,7 @@ BackpackOnChest is a mod, which adds the functionality of carrying an extra back
 - support for partially full magazines
 - full multiplayer compatibility (incl. JIP)
 - zeus compatibility
+- players are forced to walk when carrying a chestpack 
 
 ## Download
 
