@@ -20,14 +20,14 @@
 
 ## Features  
 BackpackOnChest is a mod, which adds the functionality of carrying an extra backpack on your chest.  
-- various modules and functions for misison creators ([wiki](https://github.com/DerZade/BackpackOnChest/wiki))
+- Various modules and functions for misison creators ([wiki](https://github.com/DerZade/BackpackOnChest/wiki))
 - Implementation through ACE-SelfInteractionMenu
 - TFAR compatibility (radio settings are preserved)
-- preserving attachments/magazines of weapons
-- support for partially full magazines
-- full multiplayer compatibility (incl. JIP)
-- zeus compatibility
-- players are forced to walk when carrying a chestpack 
+- Preserving attachments/magazines of weapons
+- Support for partially full magazines
+- Full multiplayer compatibility (incl. JIP)
+- Zeus compatibility
+- Players are forced to walk when carrying a chestpack 
 
 ## Download
 
