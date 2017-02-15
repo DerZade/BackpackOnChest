@@ -19,6 +19,9 @@ private _backpack = backpack _player;
 private _backpackitems = (itemCargo (backpackContainer _player) + weaponCargo (backpackContainer _player) + backpackCargo (backpackContainer _player));
 private _backpackmags = [_player] call zade_boc_fnc_backpackMagazines;
 
+//make sure the player has no chestpack and a backpack
+if ((_backpack isEqualTo "") or !(([_player] call zade_boc_fnc_chestpack) isEqualTo "")) exitWith {};
+
 //remove all mags out of items to prevent adding mags two times
 {
      for "_i" from 1 to (_x select 2) do {

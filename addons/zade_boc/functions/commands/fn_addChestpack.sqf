@@ -39,7 +39,6 @@ private _chestpack = createSimpleObject [_chestpackClass, getPos _unit];
 
 [_unit, "forceWalk", "BackpackOnChest", true] call ace_common_fnc_statusEffect_set;
 
-
 //set variable
 _unit setVariable ["zade_boc_chestpack",[[_chestpackClass,_chestpack],[_getInID,_getOutID,_animID,_killedID],[],[]],true];
 

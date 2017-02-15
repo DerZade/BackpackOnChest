@@ -23,6 +23,9 @@ private _chestpackitems =  [_player,false] call zade_boc_fnc_chestpackItems;
 private _chestpackmags = [_player] call zade_boc_fnc_chestpackMagazines;
 private _radioSettings = +(_player getVariable ["zade_boc_radioSettings",[]]);
 
+//make sure the player has chest- and backpack
+if ((_backpack isEqualTo "") or ([_player] call zade_boc_fnc_chestpack) isEqualTo "") exitWith {};
+
 //handle attachments in the backpack
 {
      //remove weapon and add base wepaon
