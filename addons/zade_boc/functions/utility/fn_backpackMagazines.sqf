@@ -1,5 +1,5 @@
 /*
- * Author: DerZade
+ * Author: DerZade & Jack Ost
  * Gets array with all magazines from backpack of the given unit.
  *
  * Arguments:
