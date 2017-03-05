@@ -17,7 +17,7 @@ params ["_unit"];
 
 private _magsArray = [];
 
-	{
+{
 	_mag = _x;	 
 	_classname = "";
 	_displayname = "";
