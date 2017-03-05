@@ -18,32 +18,20 @@ params ["_unit"];
 private _magsArray = [];
 
 {
-     _mag = _x;
-     //search for a item in the backpack items which has the same displayname to get a classname
-     _classname = "";
-     _displayName = "";
-     {
+     _mag = _x;	 
+	 _classname = "";
+	 _displayname = "";
+	 {
           _displayName = getText (configFile >> "CfgMagazines" >> _x >> "DisplayName");
-          if (_mag find _displayName != -1 and _displayName != "") exitWith {_classname = _x;};
+          if ((_mag find _displayname)!=(-1) and _displayName != "") exitWith {_classname = _x;};
      } forEach (backpackItems _unit);
-     _arr = +(toArray _mag);
-
-     //get ammo of magazine(s)
-     _arr deleteRange [0,count _displayName+1]; //remove displayname + '('
-     _ammo = +_arr;
-     _ammo deleteRange [(_ammo find 47), count _ammo]; //remove everything after '/'
-     _ammo = parseNumber toString _ammo;
-
-     //get amount of magazine(s)
-     _arr call BIS_fnc_arrayPop; //remove last element ')'
-     _arr call BIS_fnc_arrayPop; //remove last element 'x'
-     _amount = [];
-     _element = _arr call BIS_fnc_arrayPop;
-     while {_element != 40} do {
-          [_amount,_element] call BIS_fnc_arrayUnShift;
-          _element = _arr call BIS_fnc_arrayPop;
-     };
-     _amount = parseNumber toString _amount;
+	 _arr = _x splitString "(";
+	 _size = count _arr;
+	 _temp = (_arr select (_size-2)) splitString "/";
+	 _ammo = parseNumber (_temp select 0);
+	 _temp = (_arr select (_size-1)) splitString "x";
+	 _amount = parseNumber (_temp select 0);
+	 
 
      _magsArray pushBack [_classname,_ammo,_amount];
 } forEach (backpackMagazines _unit);
