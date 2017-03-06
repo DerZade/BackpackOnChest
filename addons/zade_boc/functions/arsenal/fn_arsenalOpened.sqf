@@ -29,4 +29,6 @@ _btn ctrlSetBackgroundColor [0,0,0,0.5];
 (_display displayCtrl 965) ctrlAddEventHandler ["LBSelChanged",zade_boc_fnc_arsenal_updateUI];
 _btn ctrlAddEventHandler ["ButtonClick",zade_boc_fnc_arsenal_onButtonClick];
 
+_display displayAddEventHandler ["KeyDown", "params ['_disp','_key']; if (_key isEqualTo 14) then {[_disp] spawn {sleep 0.02; ((_this select 0) displayCtrl 9233) ctrlShow (ctrlShown ((_this select 0) displayCtrl 932));};};"];
+
 [_display] call zade_boc_fnc_arsenal_updateUI;
