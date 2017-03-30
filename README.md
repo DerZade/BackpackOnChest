@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://github.com/DerZade/BackpackOnChest/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.1.1-blue.svg?style=flat-square" alt="BOC Version">
+        <img src="https://img.shields.io/badge/Version-1.2.0-blue.svg?style=flat-square" alt="BOC Version">
     </a>
     <a href="https://github.com/DerZade/BackpackOnChest/issues">
         <img src="https://img.shields.io/github/issues-raw/derzade/BackpackOnChest.svg?style=flat-square&label=Issues" alt="BOC Issues">
