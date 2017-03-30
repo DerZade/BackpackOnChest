@@ -4,7 +4,7 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"a3_ui_f","A3_Modules_F","ace_main","ace_common"};
-		version = "1.1";
+		version = "1.2";
 		author = "DerZade";
 	};
 };
