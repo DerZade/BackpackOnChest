@@ -38,5 +38,13 @@ class CfgFunctions
 			class moduleDisable {};
 			class pasteRadioSettings {};
 		};
+		class arsenal
+		{
+			file = "\zade_boc\functions\arsenal";
+			class arsenalOpened {};
+			class arsenal_onButtonClick {};
+			class arsenal_updateUI {};
+			class arsenal_postInit {postInit = 1;};
+		};
 	};
 };
