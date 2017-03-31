@@ -38,7 +38,7 @@ BackpackOnChest is a mod, which adds the functionality of carrying an extra back
     <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=820924072">
         <img src="https://img.shields.io/badge/Download-Steam-233b53.svg?style=flat-square" alt="DL Steam">
     </a>
-    <a href="http://www.armaholic.com/page.php?id=28838">
+    <a href="http://www.armaholic.com/page.php?id=28837">
         <img src="https://img.shields.io/badge/Download-Armaholic-88775d.svg?style=flat-square" alt="DL Armaholic">
     </a>
     <a href="http://withsix.com/p/Arma-3/mods/Dw_gW6YuI0KbuTzShn1VWQ/backpack-on-chest-mod">
