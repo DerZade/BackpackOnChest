@@ -20,7 +20,7 @@
 
 ## Features  
 BackpackOnChest is a mod, which adds the functionality of carrying an extra backpack on your chest.  
-- Various modules and functions for misison creators ([wiki](https://github.com/DerZade/BackpackOnChest/wiki))
+- Various modules and functions for mission creators ([wiki](https://github.com/DerZade/BackpackOnChest/wiki))
 - Implementation through ACE-SelfInteractionMenu
 - TFAR compatibility (radio settings are preserved)
 - Preserving attachments/magazines of weapons
