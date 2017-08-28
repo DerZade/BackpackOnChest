@@ -22,9 +22,9 @@ if (isClass(configFile >> "cfgPatches" >> "task_force_radio")) exitWith {
      //apply settings
      private _radio = _player call TFAR_fnc_backpackLr;
      //Changed API in TFAR 1.0
-     if (isClass(configFile >> "cfgPatches" >> "tfar_core")) {
+     if (isClass(configFile >> "cfgPatches" >> "tfar_core")) then {
          [_radio, _settings] call TFAR_fnc_setLrSettings;     
      } else {
          [_radio select 0, _radio select 1, _settings] call TFAR_fnc_setLrSettings;
-     }
+     };
 };
