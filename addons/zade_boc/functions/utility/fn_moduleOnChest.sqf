@@ -22,18 +22,18 @@ private _delay = _module getVariable "delay";
 //make sure there is no unit twice in the array
 private _units = [];
 {
-     _units pushBackUnique _x;
+    _units pushBackUnique _x;
 } forEach _syncedUnits;
 
 _null = [_units,_backpackClass,_delay] spawn {
-     params ["_units","_backpackClass","_delay"];
-     sleep _delay;
-     {
-          if !((backpack _x) isEqualTo "") then {
-               [_x] call zade_boc_fnc_actionOnChest;
-          };
-          if (_backpackClass != "") then {
-               _x addBackpackGlobal _backpackClass;
-          };
-     } forEach _units;
+    params ["_units","_backpackClass","_delay"];
+    sleep _delay;
+    {
+        if !((backpack _x) isEqualTo "") then {
+            [_x] call zade_boc_fnc_actionOnChest;
+        };
+        if (_backpackClass != "") then {
+            _x addBackpackGlobal _backpackClass;
+        };
+    } forEach _units;
 };

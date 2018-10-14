@@ -28,12 +28,12 @@ clearAllItemsFromBackpack _backpack;
 
 //add items
 {
-     _backpack addItemCargoGlobal [_x, 1];
+    _backpack addItemCargoGlobal [_x, 1];
 } forEach _chestpackitems;
 
 //add magazines
 {
-     _backpack addMagazineAmmoCargo [(_x select 0), (_x select 2), (_x select 1)];
+    _backpack addMagazineAmmoCargo [(_x select 0), (_x select 2), (_x select 1)];
 } forEach _chestpackmags;
 
 //remove the backpack from the dead unit

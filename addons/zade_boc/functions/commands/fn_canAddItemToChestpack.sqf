@@ -22,19 +22,19 @@ private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call zade
 
 private _itemMass = 0;
 if (isClass (configFile>>"CfgWeapons">> _item >> "ItemInfo")) then {
-     _itemMass = getNumber(configFile>>"CfgWeapons">> _item >> "ItemInfo" >> "Mass");
+    _itemMass = getNumber(configFile>>"CfgWeapons">> _item >> "ItemInfo" >> "Mass");
 };
 if (isClass (configFile>>"CfgWeapons">> _item >> "WeaponSlotsInfo")) then {
-     _itemMass = getNumber(configFile>>"CfgWeapons">> _item >> "WeaponSlotsInfo" >> "Mass")
+    _itemMass = getNumber(configFile>>"CfgWeapons">> _item >> "WeaponSlotsInfo" >> "Mass")
 };
 if (isClass (configFile>>"CfgMagazines">> _item)) then {
-     _itemMass = getNumber(configFile>>"CfgMagazines">> _item >> "Mass");
+    _itemMass = getNumber(configFile>>"CfgMagazines">> _item >> "Mass");
 };
 if (isClass (configFile>>"CfgVehicles">> _item)) then  {
-     _itemMass = getNumber(configFile>>"CfgVehicles">> _item >> "Mass");
+    _itemMass = getNumber(configFile>>"CfgVehicles">> _item >> "Mass");
 };
 if (isClass (configFile>>"CfgGlasses">> _item)) then  {
-     _itemMass = getNumber(configFile>>"CfgGlasses">> _item >> "Mass");
+    _itemMass = getNumber(configFile>>"CfgGlasses">> _item >> "Mass");
 };
 
 if (_itemMass * _amount > _freeSpace) then {false} else {true};

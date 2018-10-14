@@ -2,7 +2,7 @@ disableSerialization;
 params ["_display"];
 
 if (_display isEqualType controlNull) exitWith {  //the onSelChanged EH calls before the actual backpack changed so we have to wait a little bit
-     [ctrlParent _display] spawn {sleep 0.05; _this call zade_boc_fnc_arsenal_updateUI};
+    [ctrlParent _display] spawn {sleep 0.05; _this call zade_boc_fnc_arsenal_updateUI};
 };
 
 //the arsenal unit
@@ -18,8 +18,8 @@ if (!(_backpack isEqualTo "") and !(_chestpack isEqualTo "")) then {_action = "s
 (_display displayCtrl 9233) ctrlSetTooltip localize format ["str_zade_boc_%1",_action];
 
 if ((_backpack isEqualTo "") and (_chestpack isEqualTo "")) then {
-     (_display displayCtrl 9233) ctrlEnable false;
-     (_display displayCtrl 9233) ctrlSetTooltip "";
+    (_display displayCtrl 9233) ctrlEnable false;
+    (_display displayCtrl 9233) ctrlSetTooltip "";
 } else {
-     (_display displayCtrl 9233) ctrlEnable true;
+    (_display displayCtrl 9233) ctrlEnable true;
 };

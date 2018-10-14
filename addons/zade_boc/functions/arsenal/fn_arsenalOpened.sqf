@@ -7,7 +7,7 @@ if (missionNamespace getVariable ['zade_boc_disabled',false]) exitWith {};
 private _notshown = 948;
 for "_i" from 948 to 945 step -1 do {
     if !(ctrlShown (_display displayCtrl _i)) then {
-         _notshown = _i;
+        _notshown = _i;
     };
 };
 

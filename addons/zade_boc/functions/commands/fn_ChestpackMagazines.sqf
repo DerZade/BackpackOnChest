@@ -19,9 +19,9 @@ private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _mags = [];
 
 {
-     private _mag = +(_x);
-     _mag pushBack ((compile format ["_x isEqualTo %1",_x]) count (_var select 3));
-     _mags pushBackUnique _mag;
+    private _mag = +(_x);
+    _mag pushBack ((compile format ["_x isEqualTo %1",_x]) count (_var select 3));
+    _mags pushBackUnique _mag;
 } forEach (_var select 3);
 
 //return objNull

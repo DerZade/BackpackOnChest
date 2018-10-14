@@ -23,15 +23,15 @@ if !([_unit,_item,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
 
 //exit if is magazine
 if (isClass (configFile >> "CfgMagazines" >> _item)) exitWith {
-     for "_i" from 1 to _amount do {
-          [_unit,_item,(getNumber (configFile >> "CfgMagazines" >> _item >> "count"))] call zade_boc_fnc_addMagToChestpack;
-     };
+    for "_i" from 1 to _amount do {
+        [_unit,_item,(getNumber (configFile >> "CfgMagazines" >> _item >> "count"))] call zade_boc_fnc_addMagToChestpack;
+    };
 };
 
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 
 for "_i" from 1 to _amount do {
-     (_var select 2) pushBack _item;
+    (_var select 2) pushBack _item;
 };
 
 //update variable

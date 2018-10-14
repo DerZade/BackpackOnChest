@@ -20,10 +20,10 @@ private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _items = +(_var select 2);
 
 if (_returnMags) then {
-     //add magazines
-     {
-          _items pushBack (_x select 0);
-     } forEach (_var select 3);
+    //add magazines
+    {
+    _items pushBack (_x select 0);
+    } forEach (_var select 3);
 };
 
 //return objNull

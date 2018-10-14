@@ -18,14 +18,14 @@ params ["_unit","_chestpackClass"];
 
 //add HandleDisconnect-EH on server if not done yet
 if !(missionNamespace getVariable ["zade_boc_HDCEHadded",false]) then {
-     [[[],{addMissionEventHandler ["HandleDisconnect",zade_boc_fnc_EHHandleDisconnect];}],"BIS_fnc_call",false] call BIS_fnc_MP;
-     zade_boc_HDCEHadded = true;
-     publicVariable "zade_boc_HDCEHadded";
+    [[[],{addMissionEventHandler ["HandleDisconnect",zade_boc_fnc_EHHandleDisconnect];}],"BIS_fnc_call",false] call BIS_fnc_MP;
+    zade_boc_HDCEHadded = true;
+    publicVariable "zade_boc_HDCEHadded";
 };
 
 //delete existing chestpack, if there is one
 if ([_unit] call zade_boc_fnc_chestpack != "") then {
-     [_unit] call zade_boc_fnc_removeChestpack;
+    [_unit] call zade_boc_fnc_removeChestpack;
 };
 
 //add EHs

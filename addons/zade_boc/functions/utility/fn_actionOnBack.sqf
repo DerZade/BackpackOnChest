@@ -28,22 +28,22 @@ _player addBackpackGlobal _chestpack;
 clearAllItemsFromBackpack _player;
 //add items
 {
-     //check wether item is a backpack
-     if (isClass (configFile>> "CfgVehicles" >> _x)) then {
-          (backpackContainer _player) addBackpackCargoGlobal [_x, 1];
-     } else {
-          _player addItemToBackpack _x;
-     };
+    //check wether item is a backpack
+    if (isClass (configFile>> "CfgVehicles" >> _x)) then {
+        (backpackContainer _player) addBackpackCargoGlobal [_x, 1];
+    } else {
+        _player addItemToBackpack _x;
+    };
 } forEach _chestpackitems;
 
 //add magazines
 {
-     (backpackContainer _player) addMagazineAmmoCargo [(_x select 0), (_x select 2), (_x select 1)];
+    (backpackContainer _player) addMagazineAmmoCargo [(_x select 0), (_x select 2), (_x select 1)];
 } forEach _chestpackmags;
 
 
 if !(_radioSettings isEqualTo []) then {
-     [_player,_radioSettings] call zade_boc_fnc_pasteRadioSettings;
+    [_player,_radioSettings] call zade_boc_fnc_pasteRadioSettings;
 };
 
 [_player] call zade_boc_fnc_removeChestpack;

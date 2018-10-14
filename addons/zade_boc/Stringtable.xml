@@ -9,10 +9,10 @@
 				<German>BackpackOnChest verbieten</German>
 				<Japanese>BackpackOnChest を制限</Japanese>
 			</Key>
-               <Key ID="str_zade_boc_moduleDisable_desc">
+			<Key ID="str_zade_boc_moduleDisable_desc">
 				<Original>Placing this module will prohibit the use of BackpackOnChest.</Original>
 				<English>Placing this module will prohibit the use of BackpackOnChest.</English>
-		       		<French>Le placement de ce module interdira le positionement du sac sur le ventre.</French>
+				<French>Le placement de ce module interdira le positionement du sac sur le ventre.</French>
 				<German>Verbietet das benutzen von BackpackOnChest.</German>
 				<Japanese>モジュールにより BackpackOnChest の使用を制限します。</Japanese>
 			</Key>
