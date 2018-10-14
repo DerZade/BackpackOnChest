@@ -32,7 +32,7 @@ _null = [_units,_backpackClass,_delay] spawn {
         if !((backpack _x) isEqualTo "") then {
             [_x] call zade_boc_fnc_actionOnChest;
         };
-        if (_backpackClass != "") then {
+        if !(_backpackClass isEqualTo "") then {
             _x addBackpackGlobal _backpackClass;
         };
     } forEach _units;
