@@ -17,11 +17,11 @@
 params ["_unit"];
 
 if !([_unit] call zade_boc_fnc_chestpack isEqualTo "") then {
-    [[_unit] call zade_boc_fnc_chestpackContainer, _unit] spawn {
-        params ["_container","_unit"];
+    [objectParent ([_unit] call zade_boc_fnc_chestpackContainer), _unit] spawn {
+        params ["_weaponHolder","_unit"];
         sleep 1.5;
         if !(alive _unit) then {
-            deleteVehicle _container;
+            deleteVehicle _weaponHolder;
         };
     };
 };

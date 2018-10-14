@@ -18,10 +18,10 @@ params ["_unit","_anim"];
 
 if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
 
-_chestpack = [_unit] call zade_boc_fnc_chestpackContainer;
+_weaponHolder = objectParent ([_unit] call zade_boc_fnc_chestpackContainer);
 
 //freefall
 if ((animationState _unit) find "halofreefall_" isEqualTo 0) then {
-    _chestpack attachTo [_unit,[0,-0.4,0.05],"pelvis"];
-    _chestpack setVectorDirandUp [[0,0,1],[0,1,0]];
+    [_weaponHolder, [_unit,[0,-0.5,-0.12],"pelvis"]] remoteExec ["attachTo", 0];
+    [_weaponHolder, [[0,-1,0],[0,0,-1]]] remoteExec ["setVectorDirAndUp", 0];
 };

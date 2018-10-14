@@ -1,5 +1,30 @@
 class CfgVehicles
 {
+    class ReammoBox;
+	class zade_boc_WeaponHolder: ReammoBox
+	{
+		scope = 1;
+		author = "DerZade";
+		_generalMacro = "zade_boc_WeaponHolder";
+		scopeCurator = 0;
+		model = "zade_boc\model.p3d";
+		accuracy = 0.2;
+		mapSize = 1.39;
+		class TransportMagazines {};
+		forceSupply = 0;
+		memoryPointSupply = "";
+		supplyRadius = 0;
+		showWeaponCargo = 1;
+		transportMaxMagazines = 1e+009;
+		transportMaxWeapons = 1e+009;
+		displayName = "BackpackOnChest WH";
+		destrType = "DestructNo";
+		transportMaxBackpacks = 0;
+		isGround = 0;
+		icon = "iconObject_1x1";
+	};
+
+
     class Logic;
     class Module_F: Logic
     {

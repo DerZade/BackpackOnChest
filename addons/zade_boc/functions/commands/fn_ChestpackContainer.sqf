@@ -18,10 +18,10 @@ params ["_unit"];
 
 if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
-private _chestpack = (_var select 0) select 1;
+private _weaponHolder = (_var select 0) select 1;
 
 //return objNull
-if (isNil "_var" or isNil "_chestpack") exitWith {objNull};
+if (isNil "_var" or isNil "_weaponHolder") exitWith {objNull};
 
 //return object
-_chestpack
+firstBackpack _weaponHolder

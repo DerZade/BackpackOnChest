@@ -17,8 +17,8 @@ params ["_unit"];
 
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 
-//delete chestpackContainer
-    deleteVehicle ([_unit] call zade_boc_fnc_chestpackContainer);
+//delete weaponHolder holding chestpack
+deleteVehicle objectParent ([_unit] call zade_boc_fnc_chestpackContainer);
 
 //remove all EHs
 _unit removeEventHandler ["GetInMan",(_var select 1) select 0];

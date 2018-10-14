@@ -35,12 +35,14 @@ private _animID = _unit addEventHandler ["AnimDone",zade_boc_fnc_EHAnimDone];
 private _killedID = _unit addEventHandler ["Killed",zade_boc_fnc_EHKilled];
 
 //create chestpack itself
-private _chestpack = createSimpleObject [_chestpackClass, getPos _unit];
+private _weaponHolder = createVehicle ["zade_boc_WeaponHolder", getPos _unit, [], 0, "CAN_COLLIDE"];
+_weaponHolder addBackpackCargoGlobal [_chestpackClass, 1];
+
 
 [_unit, "forceWalk", "BackpackOnChest", true] call ace_common_fnc_statusEffect_set;
 
 //set variable
-_unit setVariable ["zade_boc_chestpack",[[_chestpackClass,_chestpack],[_getInID,_getOutID,_animID,_killedID],[],[]],true];
+_unit setVariable ["zade_boc_chestpack",[[_chestpackClass, _weaponHolder],[_getInID,_getOutID,_animID,_killedID],[],[]], true];
 
 //execute vehicle shit
 if !(vehicle _unit isEqualTo _unit) then {
