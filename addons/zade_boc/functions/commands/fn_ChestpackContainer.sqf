@@ -16,7 +16,7 @@
  */
 params [ ["_unit",objNull,[objNull]] ];
 
-if (isNull _unit) exitWith {};
+if (isNull _unit) exitWith {objNull};
 
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _weaponHolder = (_var select 0) select 1;

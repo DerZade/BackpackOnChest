@@ -16,7 +16,9 @@
  */
 params [ ["_unit",objNull,[objNull]], ["_returnMags",true,[true]] ];
 
-if (isNull _unit) exitWith {};
+if (isNull _unit) exitWith {[]};
+
+if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {[]};
 
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _items = +(_var select 2);
