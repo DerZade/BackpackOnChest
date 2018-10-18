@@ -30,8 +30,6 @@ class CfgFunctions
 		class utility
 		{
 			file = "\zade_boc\functions\utility";
-			class backpackMagazines {};
-			class copyRadioSettings {};
 			class EHAnimDone {};
 			class EHGetIn {};
 			class EHGetOut {};
@@ -41,7 +39,6 @@ class CfgFunctions
 			class moduleAdd {};
 			class moduleOnChest {};
 			class moduleDisable {};
-			class pasteRadioSettings {};
 		};
 		class arsenal
 		{
