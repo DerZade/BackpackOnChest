@@ -14,7 +14,9 @@
  *
  * Public: No
  */
-params ["_unit","_item"];
+params [ ["_unit",objNull,[objNull]], ["_item","",[""]] ];
+
+if (isNull _unit || _item isEqualTo "") exitWith {};
 
 //exit if there is no such item in chestpack
 if ([_unit] call zade_boc_fnc_chestpackItems find _item isEqualTo -1) exitWith {};

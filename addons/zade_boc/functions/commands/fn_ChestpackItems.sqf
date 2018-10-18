@@ -14,7 +14,9 @@
  *
  * Public: No
  */
-params ["_unit",["_returnMags",true]];
+params [ ["_unit",objNull,[objNull]], ["_returnMags",true,[true]] ];
+
+if (isNull _unit) exitWith {};
 
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _items = +(_var select 2);

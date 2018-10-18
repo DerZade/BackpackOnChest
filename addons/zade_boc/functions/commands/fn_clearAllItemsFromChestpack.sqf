@@ -13,7 +13,9 @@
  *
  * Public: No
  */
-params ["_unit"];
+params [ ["_unit",objNull,[objNull]] ];
+
+if (isNull _unit) exitWith {};
 
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 _var set [2,[]];

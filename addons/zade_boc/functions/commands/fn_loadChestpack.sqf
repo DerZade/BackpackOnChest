@@ -13,7 +13,9 @@
  *
  * Public: No
  */
-params ["_unit"];
+params [ ["_unit",objNull,[objNull]] ];
+
+if (isNull _unit) exitWith {};
 
 private _items = [_unit] call zade_boc_fnc_chestpackItems;
 private _mass = 0;
