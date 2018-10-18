@@ -8,6 +8,7 @@
  * 0: Unit <OBJECT>
  * 1: Classname <STRING>
  * 2: Ammo count <NUMBER>
+ * 3: Amount <NUMBER> (optional | default: 1)
  *
  * Return Value:
  * Nothing
@@ -17,18 +18,13 @@
  *
  * Public: No
  */
-params [ ["_unit",objNull,[objNull]], ["_item","",""], ["_ammo",-1,[0]] ];
+params [ ["_unit",objNull,[objNull]], ["_item","",""], ["_ammo",-1,[0]], ["_amount",1,[0]] ];
 
-if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1) exitWith {};
+if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1 || _amount < 1) exitWith {};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
 
-//exit if there is not enough space left
-if !([_unit,_item,1] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
+// exit if there is not enough space left
+if !([_unit,_item,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
-
-(_var select 3) pushBack [_item, _ammo];
-
-//update variable
-_unit setVariable ["zade_boc_chestpack",_var,true];
+[_unit, [_item, _amount, _ammo]] call zade_boc_fnc_modifyItemAmount;

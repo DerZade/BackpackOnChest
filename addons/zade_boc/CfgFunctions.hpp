@@ -12,16 +12,20 @@ class CfgFunctions
 			class addChestpack {};
 			class addItemToChestpack {};
 			class addMagToChestpack {};
+			class addWeaponToChestpack {};
 			class canAddItemToChestpack {};
 			class Chestpack {};
 			class ChestpackContainer {};
 			class ChestpackItems {};
 			class ChestpackMagazines {};
 			class clearAllItemsFromChestpack {};
+			class chestpackLoadout {};
 			class loadChestpack {};
 			class removeChestpack {};
 			class removeItemFromChestpack {};
 			class removeMagFromChestpack {};
+			class removeWeaponFromChestpack {};
+			class setChestpackLoadout {};
 		};
 		class utility
 		{
@@ -33,6 +37,7 @@ class CfgFunctions
 			class EHGetOut {};
 			class EHHandleDisconnect {};
 			class EHKilled {};
+			class modifyItemAmount {};
 			class moduleAdd {};
 			class moduleOnChest {};
 			class moduleDisable {};

@@ -19,8 +19,4 @@ if (isNull _unit) exitWith {};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
-_var set [2,[]];
-_var set [3,[]];
-
-_unit setVariable ["zade_boc_chestpack",_var,true];
+[_unit, []] call zade_boc_fnc_setChestpackLoadout;

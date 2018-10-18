@@ -18,25 +18,20 @@
  */
 params [ ["_unit", objNull, [objNull]], ["_item","",[""]], ["_amount",1,[0]] ];
 
-if (isNull _unit || _item isEqualTo "") exitWith {};
+if (isNull _unit || _item isEqualTo "" || _amount < 1) exitWith {};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
 
-//exit if there is not enough space left
+// exit if there is not enough space left
 if !([_unit,_item,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
 
-//exit if is magazine
+// exit if is magazine
 if (isClass (configFile >> "CfgMagazines" >> _item)) exitWith {
     for "_i" from 1 to _amount do {
         [_unit,_item,(getNumber (configFile >> "CfgMagazines" >> _item >> "count"))] call zade_boc_fnc_addMagToChestpack;
     };
 };
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
+// TODO: exit if is weapon and add as weapon
 
-for "_i" from 1 to _amount do {
-    (_var select 2) pushBack _item;
-};
-
-//update variable
-_unit setVariable ["zade_boc_chestpack",_var,true];
+[_unit, [_item, _amount]] call zade_boc_fnc_modifyItemAmount;
