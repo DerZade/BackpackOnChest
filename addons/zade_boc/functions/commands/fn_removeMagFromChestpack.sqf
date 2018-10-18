@@ -20,6 +20,7 @@ params [ ["_unit",objNull,[objNull]], ["_item","",[""]], ["_ammo",-1,[0]] ];
 
 if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1) exitWith {};
 
+if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {0};
 
 //exit if there is no such item in chestpack
 if ((compile format ["(_x select 0) isEqualTo '%1' and (_x select 1) isEqualTo %2",_item,_ammo]) count ([_unit] call zade_boc_fnc_chestpackMagazines) isEqualTo 0) exitWith {};

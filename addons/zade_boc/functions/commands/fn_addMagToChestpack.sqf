@@ -21,6 +21,8 @@ params [ ["_unit",objNull,[objNull]], ["_item","",""], ["_ammo",-1,[0]] ];
 
 if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1) exitWith {};
 
+if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
+
 //exit if there is not enough space left
 if !([_unit,_item,1] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
 

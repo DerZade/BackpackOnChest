@@ -15,7 +15,9 @@
  */
 params [ ["_unit",objNull,[objNull]] ];
 
-if (isNull _unit) exitWith {};
+if (isNull _unit) exitWith {0};
+
+if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {0};
 
 private _items = [_unit] call zade_boc_fnc_chestpackItems;
 private _mass = 0;
@@ -43,6 +45,5 @@ private _mass = 0;
     _mass = _mass + _itemMass
 
 } forEach _items;
-
 
 _mass
