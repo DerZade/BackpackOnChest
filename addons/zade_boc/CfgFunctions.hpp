@@ -6,6 +6,9 @@ class CfgFunctions
 		class commands
 		{
 			file = "\zade_boc\functions\commands";
+			class actionOnBack {};
+			class actionOnChest {};
+			class actionSwap {};
 			class addChestpack {};
 			class addItemToChestpack {};
 			class addMagToChestpack {};
@@ -23,9 +26,6 @@ class CfgFunctions
 		class utility
 		{
 			file = "\zade_boc\functions\utility";
-			class actionOnBack {};
-			class actionOnChest {};
-			class actionSwap {};
 			class backpackMagazines {};
 			class copyRadioSettings {};
 			class EHAnimDone {};
