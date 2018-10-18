@@ -16,18 +16,13 @@
  *
  * Public: No
  */
-params [ ["_unit",objNull,[objNull]], ["_item","",[""]], ["_ammo",-1,[0]] ];
+params [ ["_unit",objNull,[objNull]], ["_item","",[""]], ["_ammo",-1,[0]], ["_amount",1,[0]] ];
 
-if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1) exitWith {};
+if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1 || _amount < 1) exitWith {};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {0};
 
 //exit if there is no such item in chestpack
 if ((compile format ["(_x select 0) isEqualTo '%1' and (_x select 1) isEqualTo %2",_item,_ammo]) count ([_unit] call zade_boc_fnc_chestpackMagazines) isEqualTo 0) exitWith {};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
-
-(_var select 3) deleteAt ((_var select 3) find [_item,_ammo]);
-
-//update variable
-_unit setVariable ["zade_boc_chestpack",_var,true];
+[_unit, [_item, (-1)*_amount, _ammo]] call zade_boc_fnc_modifyItemAmount;

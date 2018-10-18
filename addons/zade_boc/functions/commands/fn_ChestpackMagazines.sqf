@@ -7,6 +7,8 @@
  *
  * Return Value:
  * Chestpack magazines <ARRAY> [classname,ammo count, amount of mags]
+ * (this does not match the normal loadout format, because this function existed
+ * before 'getUnitLoadout' was a thing and backwards compatibility and shit)
  *
  * Example:
  * [player] call zade_boc_fnc_chestpackMagazines;
@@ -19,17 +21,19 @@ if (isNull _unit) exitWith {[]};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {[]};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _mags = [];
 
+
+// this could be replaced by a 'select {count _x > 2}' and then 'apply' to change
+// the order but I guess iterating two times is slower than just one forEach
 {
-    private _mag = +(_x);
-    _mag pushBack ((compile format ["_x isEqualTo %1",_x]) count (_var select 3));
-    _mags pushBackUnique _mag;
-} forEach (_var select 3);
+    if (count _x isEqualTo 3) then { // sort out magazines
+        _x params ["_item", "_amount", "_ammo"];
 
-//return objNull
-if (isNil "_var" or isNil "_mags") exitWith {[]};
+        _mags pushBack [_item, _ammo, _amount];
+    }
+} forEach ([_unit] call zade_boc_fnc_chestpackLoadout);
 
-//return magazines
+// return mags
 _mags
+

@@ -14,21 +14,13 @@
  *
  * Public: No
  */
-params [ ["_unit",objNull,[objNull]], ["_item","",[""]] ];
+params [ ["_unit",objNull,[objNull]], ["_item","",[""]], ["_amount",1,[0]] ];
 
-if (isNull _unit || _item isEqualTo "") exitWith {};
+if (isNull _unit || _item isEqualTo "" || _amount < 1) exitWith {};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
 
 //exit if there is no such item in chestpack
 if ([_unit] call zade_boc_fnc_chestpackItems find _item isEqualTo -1) exitWith {};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
-
-if (isClass (configFile >> "CfgMagazines" >> _item)) then {
-    (_var select 3) deleteAt ([(_var select 3),_item] call BIS_fnc_findInPairs);
-} else {
-    (_var select 2) deleteAt ((_var select 2) find _item);
-};
-
-_unit setVariable ["zade_boc_chestpack",_var,true];
+[_unit, [_item, (-1)*_amount]] call zade_boc_fnc_modifyItemAmount;

@@ -20,18 +20,23 @@ if (isNull _unit) exitWith {[]};
 
 if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {[]};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
-private _items = +(_var select 2);
+private _items = [];
 
-if (_returnMags) then {
-    //add magazines
-    {
-    _items pushBack (_x select 0);
-    } forEach (_var select 3);
-};
+{
+    _x params ["_item", "_amount"];
 
-//return objNull
-if (isNil "_var" or isNil "_items") exitWith {[]};
+    if (count _x < 3 || _returnMags) then {
+        // weapons are [[classname, ...], amount] so we have to extract the classname
+        if (_item isEqualType []) then {
+            _item = _item select 0;
+        };
 
-//return items
+        for "_i" from 1 to _amount do {
+            _items pushBack _item;
+        };
+    };
+
+} forEach ([_unit] call zade_boc_fnc_chestpackLoadout);
+
+// return items
 _items

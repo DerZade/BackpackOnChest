@@ -18,34 +18,15 @@ params [ ["_player",objNull,[objNull]] ];
 if (isNull _player) exitWith {};
 
 private _chestpack = [_player] call zade_boc_fnc_chestpack;
-private _chestpackitems =  [_player,false] call zade_boc_fnc_chestpackItems;
-private _chestpackmags = [_player] call zade_boc_fnc_chestpackMagazines;
-private _radioSettings = +(_player getVariable ["zade_boc_radioSettings",[]]);
+private _chestpackLoadout = [_player] call zade_boc_fnc_chestpackLoadout;
 
 //make sure the player has a chestpack and no backpack
 if ((_chestpack isEqualTo "") or !(backpack _player isEqualTo "")) exitWith {};
 
-//add pack
-_player addBackpackGlobal _chestpack;
-clearAllItemsFromBackpack _player;
-//add items
-{
-    //check wether item is a backpack
-    if (isClass (configFile>> "CfgVehicles" >> _x)) then {
-        (backpackContainer _player) addBackpackCargoGlobal [_x, 1];
-    } else {
-        _player addItemToBackpack _x;
-    };
-} forEach _chestpackitems;
+private _unitLoadout = +(getUnitLoadout _player);
 
-//add magazines
-{
-    (backpackContainer _player) addMagazineAmmoCargo [(_x select 0), (_x select 2), (_x select 1)];
-} forEach _chestpackmags;
+_unitLoadout set [5, [_chestpack, _chestpackLoadout]];
 
-
-if !(_radioSettings isEqualTo []) then {
-    [_player,_radioSettings] call zade_boc_fnc_pasteRadioSettings;
-};
+_player setUnitLoadout _unitLoadout;
 
 [_player] call zade_boc_fnc_removeChestpack;
