@@ -27,4 +27,4 @@ private _weaponHolder = objectParent ([_unit] call zade_boc_fnc_chestpackContain
 
 [_weaponHolder, false] remoteExec ["hideObjectGlobal", 0];
 
-[_unit, "forceWalk", "BackpackOnChest", true] call ace_common_fnc_statusEffect_set;
+[_unit, "forceWalk", "zade_boc", true] call ace_common_fnc_statusEffect_set;

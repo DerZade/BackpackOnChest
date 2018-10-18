@@ -41,7 +41,7 @@ private _weaponHolder = createVehicle ["zade_boc_WeaponHolder", getPos _unit, []
 _weaponHolder addBackpackCargoGlobal [_chestpackClass, 1];
 
 
-[_unit, "forceWalk", "BackpackOnChest", true] call ace_common_fnc_statusEffect_set;
+[_unit, "forceWalk", "zade_boc", true] call ace_common_fnc_statusEffect_set;
 
 //set variable
 _unit setVariable ["zade_boc_chestpack",[[_chestpackClass, _weaponHolder],[_getInID,_getOutID,_animID,_killedID],[],[]], true];
