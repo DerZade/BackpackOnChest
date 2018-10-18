@@ -14,7 +14,9 @@
  *
  * Public: No
  */
-params ["_unit","_chestpackClass"];
+params [ ["_unit",objNull,[objNull]], ["_chestpackClass","",[""]] ];
+
+if (isNull _unit || _chestpackClass isEqualTo "") exitWith {};
 
 //add HandleDisconnect-EH on server if not done yet
 if !(missionNamespace getVariable ["zade_boc_HDCEHadded",false]) then {

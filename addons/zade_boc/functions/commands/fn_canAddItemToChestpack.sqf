@@ -15,7 +15,9 @@
  *
  * Public: No
  */
-params ["_unit","_item",["_amount",1]];
+params [ ["_unit",objNull,[objNull]],["_item","",[""]], ["_amount",1,[0]] ];
+
+if (isNull _unit || _item isEqualTo "") exitWith {};
 
 //calculate space left in chestpack
 private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call zade_boc_fnc_chestpack) >> "maximumLoad") - ([_unit] call zade_boc_fnc_loadChestpack);

@@ -14,9 +14,10 @@
  *
  * Public: No
  */
-params ["_unit"];
+params [ ["_unit",objNull,[objNull]] ];
 
-if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
+if (isNull _unit) exitWith {};
+
 private _var = _unit getVariable ["zade_boc_chestpack",nil];
 private _weaponHolder = (_var select 0) select 1;
 

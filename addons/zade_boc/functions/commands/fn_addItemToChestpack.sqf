@@ -16,7 +16,9 @@
  *
  * Public: No
  */
-params ["_unit","_item",["_amount",1]];
+params [ ["_unit", objNull, [objNull]], ["_item","",[""]], ["_amount",1,[0]] ];
+
+if (isNull _unit || _item isEqualTo "") exitWith {};
 
 //exit if there is not enough space left
 if !([_unit,_item,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
