@@ -26,7 +26,7 @@
     href="https://www.youtube.com/user/gruppeadler">YouTube</a> | <a href="https://twitter.com/Gruppe_Adler">Twitter</a></strong></sup>
 </p>
 
-Gruppe Adler BackpackOnChest (GRAD_boc) - formerly known as just _Zade BackpackOnChest_ or just _BackpackOnChest_ - is a mod for Arma 3, which adds the functionality of carrying an extra backpack on your chest. This is especially useful for parachuting szenarios.
+Gruppe Adler BackpackOnChest (GRAD_boc) - formerly known as _Zade BackpackOnChest_ or just _BackpackOnChest_ - is a mod for Arma 3, which adds the functionality of carrying an extra backpack on your chest. This is especially useful for parachuting szenarios.
 
 ## Features
 - Carry a backpack on your chest
