@@ -1,12 +1,12 @@
-name = "BackpackOnChest";
+name = "Gruppe Adler BackpackOnChest";
 picture = "logo_boc_ca.paa";
 actionName = "GITHUB";
 action = "https://github.com/DerZade/BackpackOnChest";
-description = "BOC - Version 1.2";
+description = "GRAD_boc - Version 1.3";
 logo = "logo_boc_ca.paa";
 logoOver = "logo_boc_ca.paa";
-tooltip = "BOC";
+tooltip = "GRAD_boc";
 tooltipOwned = "Owned by DerZade";
-overview = "BackpackOnChest is a mod, which adds the functionality of carrying an extra backpack on your chest.";
+overview = "Gruppe Adler BackpackOnChest is a mod for Arma 3, which adds the functionality of carrying an extra backpack on your chest.";
 author = "DerZade";
 overviewPicture = "logo_boc_ca.paa";
