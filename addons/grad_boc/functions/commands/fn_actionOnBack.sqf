@@ -1,6 +1,6 @@
 /*
  * Author: DerZade
- * Triggered by the onBack-action. Handles all the stuff.
+ * Triggered by the onBack-action. Handles removing chestpack and adding backpack with same content.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -20,7 +20,7 @@ if (isNull _player) exitWith {};
 private _chestpack = [_player] call grad_boc_fnc_chestpack;
 private _chestpackLoadout = [_player] call grad_boc_fnc_chestpackLoadout;
 
-//make sure the player has a chestpack and no backpack
+// make sure the player has a chestpack and no backpack
 if ((_chestpack isEqualTo "") or !(backpack _player isEqualTo "")) exitWith {};
 
 private _unitLoadout = +(getUnitLoadout _player);

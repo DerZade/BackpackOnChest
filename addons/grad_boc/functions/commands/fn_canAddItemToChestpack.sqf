@@ -21,7 +21,7 @@ if (isNull _unit || _item isEqualTo "" || _amount < 1) exitWith {false};
 
 if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {false};
 
-//calculate space left in chestpack
+// calculate space left in chestpack
 private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call grad_boc_fnc_chestpack) >> "maximumLoad") - ([_unit] call grad_boc_fnc_loadChestpack);
 
 private _itemMass = 0;

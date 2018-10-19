@@ -18,11 +18,8 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {objNull};
 
-private _var = _unit getVariable ["grad_boc_chestpack",nil];
+private _var = _unit getVariable ["grad_boc_chestpack",[["", objNull]]];
 private _weaponHolder = (_var select 0) select 1;
 
-//return objNull
-if (isNil "_var" or isNil "_weaponHolder") exitWith {objNull};
-
-//return object
+// return backpack
 firstBackpack _weaponHolder

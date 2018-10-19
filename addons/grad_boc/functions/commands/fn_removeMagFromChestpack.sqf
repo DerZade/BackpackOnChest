@@ -22,7 +22,7 @@ if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1 || _amount < 1) exi
 
 if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {0};
 
-//exit if there is no such item in chestpack
+// exit if there is no such item in chestpack
 if ((compile format ["(_x select 0) isEqualTo '%1' and (_x select 1) isEqualTo %2",_item,_ammo]) count ([_unit] call grad_boc_fnc_chestpackMagazines) isEqualTo 0) exitWith {};
 
 [_unit, [_item, (-1)*_amount, _ammo]] call grad_boc_fnc_modifyItemAmount;

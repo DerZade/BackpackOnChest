@@ -24,8 +24,6 @@
  *
  * Public: No
  */
-
-
 params [ ["_unit", objNull, [objNull]] ];
 
 if (isNull _unit) exitWith {[]};

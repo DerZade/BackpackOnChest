@@ -1,6 +1,6 @@
 /*
  * Author: DerZade
- * Triggered by the swap-action. Handles all the stuff.
+ * Triggered by the swap-action. Handles removing backpack and adding chestpack with same content.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -31,6 +31,6 @@ private _unitLoadout = +(getUnitLoadout _player);
 _unitLoadout set [5, [_chestpack, _chestpackLoadout]];
 _player setUnitLoadout _unitLoadout;
 
-//add chestpack
-[_player,_backpack] call grad_boc_fnc_addChestpack;
+// add chestpack
+[_player, _backpack] call grad_boc_fnc_addChestpack;
 [_player, _backpackLoadout] call grad_boc_fnc_setChestpackLoadout;

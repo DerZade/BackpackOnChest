@@ -20,16 +20,16 @@ if (isNull _player) exitWith {};
 private _backpack = backpack _player;
 private _backpackLoadout = +((getUnitLoadout _player) select 5 select 1);
 
-//make sure the player has no chestpack and a backpack
+// make sure the player has no chestpack and a backpack
 if ((_backpack isEqualTo "") or !(([_player] call grad_boc_fnc_chestpack) isEqualTo "")) exitWith {};
 
-//add pack
+// add pack
 [_player, _backpack] call grad_boc_fnc_addChestpack;
 
-//add items
+// add items
 [_player, _backpackLoadout] call grad_boc_fnc_setChestpackLoadout;
 
-//remove backpack
+// remove backpack
 
 private _weaponHolder = objectParent ([_player] call grad_boc_fnc_chestpackContainer); 
  

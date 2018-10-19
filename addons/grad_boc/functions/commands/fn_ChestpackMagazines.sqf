@@ -23,7 +23,6 @@ if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {[]};
 
 private _mags = [];
 
-
 // this could be replaced by a 'select {count _x > 2}' and then 'apply' to change
 // the order but I guess iterating two times is slower than just one forEach
 {

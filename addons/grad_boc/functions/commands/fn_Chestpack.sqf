@@ -17,11 +17,7 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {};
 
-private _var = _unit getVariable ["grad_boc_chestpack",nil];
+private _var = _unit getVariable ["grad_boc_chestpack",[[""]]];
 
-//return ""
-if (isNil "_var") exitWith {""};
-private _chestpackClass = (_var select 0) select 0;
-
-//return classname
-_chestpackClass
+// return classname
+(_var select 0) select 0;

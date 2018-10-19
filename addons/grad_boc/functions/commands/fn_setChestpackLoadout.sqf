@@ -25,7 +25,6 @@
  *
  * Public: No
  */
-
 params [ ["_unit", objNull, [objNull]], ["_loadout", [], [[]]] ];
 
 if (isNull _unit) exitWith {};
@@ -36,5 +35,5 @@ private _var = _unit getVariable ["grad_boc_chestpack", nil];
 
 _var set [2, _loadout];
 
-//update variable
+// update variable
 _unit setVariable ["grad_boc_chestpack", _var, true];

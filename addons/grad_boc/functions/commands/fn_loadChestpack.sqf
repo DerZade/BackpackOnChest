@@ -23,8 +23,7 @@ private _items = [_unit] call grad_boc_fnc_chestpackItems;
 private _mass = 0;
 
 {
-
-    //get mass of item
+    // get mass of item
     private _itemMass = 0;
     if (isClass (configFile>>"CfgWeapons">> _x >> "ItemInfo")) then {
         _itemMass = getNumber(configFile>>"CfgWeapons">> _x >> "ItemInfo" >> "Mass");
