@@ -15,4 +15,4 @@
  * Public: No
  */
  
-zade_boc_disabled = true;
+grad_boc_disabled = true;

@@ -9,15 +9,15 @@
  * Nothing
  *
  * Example:
- * _this call zade_boc_fnc_EHKilled;
+ * _this call grad_boc_fnc_EHKilled;
  *
  * Public: No
  */
 params ["_unit"];
 
-private _chestpack = [_unit] call zade_boc_fnc_chestpack;
-private _chestpackitems =  [_unit, false] call zade_boc_fnc_chestpackItems;
-private _chestpackmags = [_unit] call zade_boc_fnc_chestpackMagazines;
+private _chestpack = [_unit] call grad_boc_fnc_chestpack;
+private _chestpackitems =  [_unit, false] call grad_boc_fnc_chestpackItems;
+private _chestpackmags = [_unit] call grad_boc_fnc_chestpackMagazines;
 
 private _holder = createVehicle ["WeaponHolderSimulated", (getPos _unit), [], 0, "CAN_COLLIDE"];
 
@@ -37,4 +37,4 @@ clearAllItemsFromBackpack _backpack;
 } forEach _chestpackmags;
 
 //remove the backpack from the dead unit
-[_unit] call zade_boc_fnc_removeChestpack;
+[_unit] call grad_boc_fnc_removeChestpack;

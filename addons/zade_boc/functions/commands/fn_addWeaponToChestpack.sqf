@@ -2,7 +2,7 @@
  * Author: DerZade
  * Creates new weapon and stores it in  the soldier's chestpack. Only weapons are supported.
  * The purpose of this function is to ensure that weapons with specific attachments and magazines can be added.
- * If you want to add weapon(s) without any attachments you may want to use 'zade_boc_addItemToChestpack' instead.
+ * If you want to add weapon(s) without any attachments you may want to use 'grad_boc_fnc_addItemToChestpack' instead.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -21,7 +21,7 @@
  * Nothing
  *
  * Example:
- * [player,"30Rnd_556x45_Stanag",25] call zade_boc_fnc_addMagToChestpack;
+ * [player,"30Rnd_556x45_Stanag",25] call grad_boc_fnc_addMagToChestpack;
  *
  * Public: No
  */
@@ -29,7 +29,7 @@ params [ ["_unit",objNull,[objNull]], ["_weapon",[],[[]],[7]], ["_amount",1,[0]]
 
 if (isNull _unit || count _weapon isEqualTo 0 || _amount < 1) exitWith {};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {};
 
 _weapon params [ 
 	["_class", "", [""]],
@@ -60,6 +60,6 @@ if (count _secondary > 0) then {
 };
 
 // exit if there is not enough space left
-if !([_unit,_class,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
+if !([_unit,_class,_amount] call grad_boc_fnc_canAddItemToChestpack) exitWith {};
 
-[_unit, [[_class, _silencer, _pointer, _optic, _primary, _secondary, _bipod], _amount]] call zade_boc_fnc_modifyItemAmount;
+[_unit, [[_class, _silencer, _pointer, _optic, _primary, _secondary, _bipod], _amount]] call grad_boc_fnc_modifyItemAmount;

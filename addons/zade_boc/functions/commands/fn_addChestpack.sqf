@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [player,"B_Kitbag_rgr"] call zade_boc_fnc_addChestpack;
+ * [player,"B_Kitbag_rgr"] call grad_boc_fnc_addChestpack;
  *
  * Public: No
  */
@@ -19,35 +19,35 @@ params [ ["_unit",objNull,[objNull]], ["_chestpackClass","",[""]] ];
 if (isNull _unit || _chestpackClass isEqualTo "") exitWith {};
 
 // add HandleDisconnect-EH on server if not done yet
-if !(missionNamespace getVariable ["zade_boc_HDCEHadded",false]) then {
-    ["HandleDisconnect",zade_boc_fnc_EHHandleDisconnect] remoteExecCall ["addMissionEventHandler", 2];
-    zade_boc_HDCEHadded = true;
-    publicVariable "zade_boc_HDCEHadded";
+if !(missionNamespace getVariable ["grad_boc_HDCEHadded",false]) then {
+    ["HandleDisconnect",grad_boc_fnc_EHHandleDisconnect] remoteExecCall ["addMissionEventHandler", 2];
+    grad_boc_HDCEHadded = true;
+    publicVariable "grad_boc_HDCEHadded";
 };
 
 // delete existing chestpack, if there is one
-if !([_unit] call zade_boc_fnc_chestpack isEqualTo "") then {
-    [_unit] call zade_boc_fnc_removeChestpack;
+if !([_unit] call grad_boc_fnc_chestpack isEqualTo "") then {
+    [_unit] call grad_boc_fnc_removeChestpack;
 };
 
 // add EHs
-private _getInID = _unit addEventHandler ["GetInMan",zade_boc_fnc_EHGetIn];
-private _getOutID = _unit addEventHandler ["GetOutMan",zade_boc_fnc_EHGetOut];
-private _animID = _unit addEventHandler ["AnimDone",zade_boc_fnc_EHAnimDone];
-private _killedID = _unit addEventHandler ["Killed",zade_boc_fnc_EHKilled];
+private _getInID = _unit addEventHandler ["GetInMan",grad_boc_fnc_EHGetIn];
+private _getOutID = _unit addEventHandler ["GetOutMan",grad_boc_fnc_EHGetOut];
+private _animID = _unit addEventHandler ["AnimDone",grad_boc_fnc_EHAnimDone];
+private _killedID = _unit addEventHandler ["Killed",grad_boc_fnc_EHKilled];
 
 // create chestpack itself
-private _weaponHolder = createVehicle ["zade_boc_WeaponHolder", getPos _unit, [], 0, "CAN_COLLIDE"];
+private _weaponHolder = createVehicle ["grad_boc_weaponHolder", getPos _unit, [], 0, "CAN_COLLIDE"];
 _weaponHolder addBackpackCargoGlobal [_chestpackClass, 1];
 
-[_unit, "forceWalk", "zade_boc", true] call ace_common_fnc_statusEffect_set;
+[_unit, "forceWalk", "grad_boc", true] call ace_common_fnc_statusEffect_set;
 
 // set variable
-_unit setVariable ["zade_boc_chestpack",[[_chestpackClass, _weaponHolder],[_getInID,_getOutID,_animID,_killedID],[]], true];
+_unit setVariable ["grad_boc_chestpack",[[_chestpackClass, _weaponHolder],[_getInID,_getOutID,_animID,_killedID],[]], true];
 
 // execute vehicle shit
 if !(vehicle _unit isEqualTo _unit) then {
-	[_unit, "", vehicle _unit] call zade_boc_fnc_EHGetIn;
+	[_unit, "", vehicle _unit] call grad_boc_fnc_EHGetIn;
 } else {
-	[_unit, "", objNull] call zade_boc_fnc_EHGetOut;
+	[_unit, "", objNull] call grad_boc_fnc_EHGetOut;
 };

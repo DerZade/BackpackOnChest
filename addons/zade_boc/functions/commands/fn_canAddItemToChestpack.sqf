@@ -11,7 +11,7 @@
  * Can add item? <BOOL>
  *
  * Example:
- * [player,"FirstAidKit",2] call zade_boc_fnc_canAddItemToChestpack;
+ * [player,"FirstAidKit",2] call grad_boc_fnc_canAddItemToChestpack;
  *
  * Public: No
  */
@@ -19,10 +19,10 @@ params [ ["_unit",objNull,[objNull]],["_item","",[""]], ["_amount",1,[0]] ];
 
 if (isNull _unit || _item isEqualTo "" || _amount < 1) exitWith {false};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {false};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {false};
 
 //calculate space left in chestpack
-private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call zade_boc_fnc_chestpack) >> "maximumLoad") - ([_unit] call zade_boc_fnc_loadChestpack);
+private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call grad_boc_fnc_chestpack) >> "maximumLoad") - ([_unit] call grad_boc_fnc_loadChestpack);
 
 private _itemMass = 0;
 if (isClass (configFile>>"CfgWeapons">> _item >> "ItemInfo")) then {

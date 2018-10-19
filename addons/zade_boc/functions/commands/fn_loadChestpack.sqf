@@ -9,7 +9,7 @@
  * Mass <NUMBER>
  *
  * Example:
- * [player] call zade_boc_fnc_loadChestpack;
+ * [player] call grad_boc_fnc_loadChestpack;
  *
  * Public: No
  */
@@ -17,9 +17,9 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {0};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {0};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {0};
 
-private _items = [_unit] call zade_boc_fnc_chestpackItems;
+private _items = [_unit] call grad_boc_fnc_chestpackItems;
 private _mass = 0;
 
 {

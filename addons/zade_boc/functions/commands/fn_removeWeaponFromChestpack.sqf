@@ -1,7 +1,7 @@
 /*
  * Author: DerZade
  * Removes weapon from unit's chestpack. The purpose of this function is to ensure that weapons with specific attachments and magazines can be removed.
- * If you want to remove a weapon with just any attachments/magazines you may want to use 'zade_boc_fnc_removeItemFromChestpack' instead.
+ * If you want to remove a weapon with just any attachments/magazines you may want to use 'grad_boc_fnc_removeItemFromChestpack' instead.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -19,7 +19,7 @@
  * Nothing
  *
  * Example:
- * [player,"30Rnd_556x45_Stanag",25] call zade_boc_fnc_removeMagFromChestpack;
+ * [player,"30Rnd_556x45_Stanag",25] call grad_boc_fnc_removeMagFromChestpack;
  *
  * Public: No
  */
@@ -27,9 +27,9 @@ params [ ["_unit",objNull,[objNull]], ["_weapon",[],[[]],[7]], ["_amount",1,[0]]
 
 if (isNull _unit || count _wepaon isEqualTo 0 || _amount < 1) exitWith {};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {};
 
 //exit if there is no such item in chestpack
-if ([_unit] call zade_boc_fnc_chestpackItems find _item isEqualTo -1) exitWith {};
+if ([_unit] call grad_boc_fnc_chestpackItems find _item isEqualTo -1) exitWith {};
 
-[_unit, [_weapon, (-1)*_amount]] call zade_boc_fnc_modifyItemAmount;
+[_unit, [_weapon, (-1)*_amount]] call grad_boc_fnc_modifyItemAmount;

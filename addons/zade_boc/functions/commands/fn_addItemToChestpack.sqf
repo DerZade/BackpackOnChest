@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * [player,"FirstAidKit"] call zade_boc_fnc_addItemToChestpack;
+ * [player,"FirstAidKit"] call grad_boc_fnc_addItemToChestpack;
  *
  * Public: No
  */
@@ -20,19 +20,19 @@ params [ ["_unit", objNull, [objNull]], ["_item","",[""]], ["_amount",1,[0]] ];
 
 if (isNull _unit || _item isEqualTo "" || _amount < 1) exitWith {};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {};
 
 // exit if there is not enough space left
-if !([_unit,_item,_amount] call zade_boc_fnc_canAddItemToChestpack) exitWith {};
+if !([_unit,_item,_amount] call grad_boc_fnc_canAddItemToChestpack) exitWith {};
 
 private _type = ([_item] call BIS_fnc_itemType) select 0;
 
 if (_type isEqualTo "Magazine") exitWith {
-    [_unit,_item,(getNumber (configFile >> "CfgMagazines" >> _item >> "count")), _amount] call zade_boc_fnc_addMagToChestpack;
+    [_unit,_item,(getNumber (configFile >> "CfgMagazines" >> _item >> "count")), _amount] call grad_boc_fnc_addMagToChestpack;
 };
 
 if (_type isEqualTo "Weapon") exitWith {
-    [_unit,[_item, "", "", "", [], [], ""], _amount] call zade_boc_fnc_addWeaponToChestpack;
+    [_unit,[_item, "", "", "", [], [], ""], _amount] call grad_boc_fnc_addWeaponToChestpack;
 };
 
-[_unit, [_item, _amount]] call zade_boc_fnc_modifyItemAmount;
+[_unit, [_item, _amount]] call grad_boc_fnc_modifyItemAmount;

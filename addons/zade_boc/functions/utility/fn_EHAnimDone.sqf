@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * _this call zade_boc_fnc_EHAnimDone;
+ * _this call grad_boc_fnc_EHAnimDone;
  *
  * Public: No
  */
@@ -18,7 +18,7 @@ params ["_unit","_anim"];
 
 if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
 
-_weaponHolder = objectParent ([_unit] call zade_boc_fnc_chestpackContainer);
+_weaponHolder = objectParent ([_unit] call grad_boc_fnc_chestpackContainer);
 
 //freefall
 if ((animationState _unit) find "halofreefall_" isEqualTo 0) then {

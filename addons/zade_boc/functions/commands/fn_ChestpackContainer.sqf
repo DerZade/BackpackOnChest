@@ -10,7 +10,7 @@
  * Cargo container or objNull <OBJECT>
  *
  * Example:
- * [player] call zade_boc_fnc_chestpackContainer;
+ * [player] call grad_boc_fnc_chestpackContainer;
  *
  * Public: No
  */
@@ -18,7 +18,7 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {objNull};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
+private _var = _unit getVariable ["grad_boc_chestpack",nil];
 private _weaponHolder = (_var select 0) select 1;
 
 //return objNull

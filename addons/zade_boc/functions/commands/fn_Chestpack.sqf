@@ -9,7 +9,7 @@
  * Classname <STRING>
  *
  * Example:
- * [player] call zade_boc_fnc_chestpack;
+ * [player] call grad_boc_fnc_chestpack;
  *
  * Public: No
  */
@@ -17,7 +17,7 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {};
 
-private _var = _unit getVariable ["zade_boc_chestpack",nil];
+private _var = _unit getVariable ["grad_boc_chestpack",nil];
 
 //return ""
 if (isNil "_var") exitWith {""};

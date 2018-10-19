@@ -10,7 +10,7 @@
  * Items <ARRAY>
  *
  * Example:
- * [player] call zade_boc_fnc_chestpackItems;
+ * [player] call grad_boc_fnc_chestpackItems;
  *
  * Public: No
  */
@@ -18,7 +18,7 @@ params [ ["_unit",objNull,[objNull]], ["_returnMags",true,[true]] ];
 
 if (isNull _unit) exitWith {[]};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {[]};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {[]};
 
 private _items = [];
 
@@ -36,7 +36,7 @@ private _items = [];
         };
     };
 
-} forEach ([_unit] call zade_boc_fnc_chestpackLoadout);
+} forEach ([_unit] call grad_boc_fnc_chestpackLoadout);
 
 // return items
 _items

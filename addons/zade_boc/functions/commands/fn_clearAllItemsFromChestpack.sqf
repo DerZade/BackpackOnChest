@@ -9,7 +9,7 @@
  * Nothing
  *
  * Example:
- * [player] call zade_boc_fnc_clearAllItemsFromChestpack;
+ * [player] call grad_boc_fnc_clearAllItemsFromChestpack;
  *
  * Public: No
  */
@@ -17,6 +17,6 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {};
 
-[_unit, []] call zade_boc_fnc_setChestpackLoadout;
+[_unit, []] call grad_boc_fnc_setChestpackLoadout;

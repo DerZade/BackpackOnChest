@@ -11,7 +11,7 @@
  * before 'getUnitLoadout' was a thing and backwards compatibility and shit)
  *
  * Example:
- * [player] call zade_boc_fnc_chestpackMagazines;
+ * [player] call grad_boc_fnc_chestpackMagazines;
  *
  * Public: No
  */
@@ -19,7 +19,7 @@ params [ ["_unit",objNull,[objNull]] ];
 
 if (isNull _unit) exitWith {[]};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {[]};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {[]};
 
 private _mags = [];
 
@@ -32,7 +32,7 @@ private _mags = [];
 
         _mags pushBack [_item, _ammo, _amount];
     }
-} forEach ([_unit] call zade_boc_fnc_chestpackLoadout);
+} forEach ([_unit] call grad_boc_fnc_chestpackLoadout);
 
 // return mags
 _mags

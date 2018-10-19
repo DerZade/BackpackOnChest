@@ -9,7 +9,7 @@
  * Nothing
  *
  * Example:
- * [player] call zade_boc_fnc_actionSwap;
+ * [player] call grad_boc_fnc_actionSwap;
  *
  * Public: No
  */
@@ -18,9 +18,9 @@ params [ ["_player",objNull,[objNull]] ];
 if (isNull _player) exitWith {};
 
 private _backpack = backpack _player;
-private _chestpack = [_player] call zade_boc_fnc_chestpack;
+private _chestpack = [_player] call grad_boc_fnc_chestpack;
 private _backpackLoadout = +((getUnitLoadout _player) select 5 select 1);
-private _chestpackLoadout = [_player] call zade_boc_fnc_chestpackLoadout;
+private _chestpackLoadout = [_player] call grad_boc_fnc_chestpackLoadout;
 
 // make sure the player has chest- and backpack
 if ((_backpack isEqualTo "") or (_chestpack isEqualTo "")) exitWith {};
@@ -32,5 +32,5 @@ _unitLoadout set [5, [_chestpack, _chestpackLoadout]];
 _player setUnitLoadout _unitLoadout;
 
 //add chestpack
-[_player,_backpack] call zade_boc_fnc_addChestpack;
-[_player, _backpackLoadout] call zade_boc_fnc_setChestpackLoadout;
+[_player,_backpack] call grad_boc_fnc_addChestpack;
+[_player, _backpackLoadout] call grad_boc_fnc_setChestpackLoadout;

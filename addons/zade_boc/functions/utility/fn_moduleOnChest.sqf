@@ -30,7 +30,7 @@ _null = [_units,_backpackClass,_delay] spawn {
     sleep _delay;
     {
         if !((backpack _x) isEqualTo "") then {
-            [_x] call zade_boc_fnc_actionOnChest;
+            [_x] call grad_boc_fnc_actionOnChest;
         };
         if !(_backpackClass isEqualTo "") then {
             _x addBackpackGlobal _backpackClass;

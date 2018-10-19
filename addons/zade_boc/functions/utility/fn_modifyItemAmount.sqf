@@ -1,6 +1,6 @@
 
 params [ ["_unit",objNull,[objNull]], ["_params",[],[[]],[2,3]]];
-private _loadout = [_unit] call zade_boc_fnc_chestpackLoadout;
+private _loadout = [_unit] call grad_boc_fnc_chestpackLoadout;
 
 private _paramsWithoutAmount = +_params;
 private _loadoutWithoutAmount = +_loadout;
@@ -29,4 +29,4 @@ if ((_loadout select _index) select 1 < 1) then {
 };
 
 // update variable
-[_unit, _loadout] call zade_boc_fnc_setChestpackLoadout;
+[_unit, _loadout] call grad_boc_fnc_setChestpackLoadout;

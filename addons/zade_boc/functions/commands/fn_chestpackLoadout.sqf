@@ -20,7 +20,7 @@
  * Chestpack Loadout <ARRAY>
  *
  * Example:
- * [player] call zade_boc_fnc_chestpackLoadout;
+ * [player] call grad_boc_fnc_chestpackLoadout;
  *
  * Public: No
  */
@@ -30,6 +30,6 @@ params [ ["_unit", objNull, [objNull]] ];
 
 if (isNull _unit) exitWith {[]};
 
-private _var = _unit getVariable ["zade_boc_chestpack", [nil,nil,[]]];
+private _var = _unit getVariable ["grad_boc_chestpack", [nil,nil,[]]];
 
 +(_var select 2);

@@ -1,7 +1,7 @@
 params ["_display"];
 
 //exit if BOC is disabled
-if (missionNamespace getVariable ['zade_boc_disabled',false]) exitWith {};
+if (missionNamespace getVariable ['grad_boc_disabled',false]) exitWith {};
 
 //get lowest button that is hidden
 private _notshown = 948;
@@ -26,11 +26,11 @@ _btn ctrlCommit 0;
 _btn ctrlSetBackgroundColor [0,0,0,0.5];
 
 //add EH to backpack list and to newly created button
-(_display displayCtrl 965) ctrlAddEventHandler ["LBSelChanged",zade_boc_fnc_arsenal_updateUI];
-_btn ctrlAddEventHandler ["ButtonClick",zade_boc_fnc_arsenal_onButtonClick];
+(_display displayCtrl 965) ctrlAddEventHandler ["LBSelChanged",grad_boc_fnc_arsenal_updateUI];
+_btn ctrlAddEventHandler ["ButtonClick",grad_boc_fnc_arsenal_onButtonClick];
 
 //this is for hiding the button when the rest of the ui is hidden (e.g. by pressing BACKSPACE)
 _display displayAddEventHandler ["KeyDown", "0 = _this spawn {sleep 0.02; ((_this select 0) displayCtrl 9233) ctrlShow (ctrlShown ((_this select 0) displayCtrl 932));};"];
 _display displayAddEventHandler ["MouseButtonUp", "0 = _this spawn {sleep 0.02; ((_this select 0) displayCtrl 9233) ctrlShow (ctrlShown ((_this select 0) displayCtrl 932));};"];
 
-[_display] call zade_boc_fnc_arsenal_updateUI;
+[_display] call grad_boc_fnc_arsenal_updateUI;

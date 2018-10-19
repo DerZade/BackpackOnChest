@@ -21,7 +21,7 @@
  * Nothing
  *
  * Example:
- * [player,[["FirstAidKit", 1], ["30Rnd_65x39_caseless_mag",5,30]]] call zade_boc_fnc_setChestpackLoadout;
+ * [player,[["FirstAidKit", 1], ["30Rnd_65x39_caseless_mag",5,30]]] call grad_boc_fnc_setChestpackLoadout;
  *
  * Public: No
  */
@@ -30,11 +30,11 @@ params [ ["_unit", objNull, [objNull]], ["_loadout", [], [[]]] ];
 
 if (isNull _unit) exitWith {};
 
-if ([_unit] call zade_boc_fnc_chestpack isEqualTo "") exitWith {};
+if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {};
 
-private _var = _unit getVariable ["zade_boc_chestpack", nil];
+private _var = _unit getVariable ["grad_boc_chestpack", nil];
 
 _var set [2, _loadout];
 
 //update variable
-_unit setVariable ["zade_boc_chestpack", _var, true];
+_unit setVariable ["grad_boc_chestpack", _var, true];
