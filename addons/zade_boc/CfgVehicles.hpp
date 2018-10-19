@@ -1,7 +1,7 @@
 class CfgVehicles
 {
     class ReammoBox;
-	class zade_boc_WeaponHolder: ReammoBox
+	class zade_boc_weaponHolder: ReammoBox
 	{
 		scope = 1;
 		author = "DerZade";
