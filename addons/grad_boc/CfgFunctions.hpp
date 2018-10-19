@@ -1,4 +1,4 @@
-#define REDIRECT_PATH "\zade_boc\functions\zade_boc\fn_redirectFunction.sqf"
+#define REDIRECT_PATH "\grad_boc\functions\zade_boc\fn_redirectFunction.sqf"
 
 class CfgFunctions
 {
@@ -34,7 +34,7 @@ class CfgFunctions
 		tag = "grad_boc";
 		class commands
 		{
-			file = "\zade_boc\functions\commands";
+			file = "\grad_boc\functions\commands";
 			class actionOnBack{};
 			class actionOnChest{};
 			class actionSwap{};
@@ -58,7 +58,7 @@ class CfgFunctions
 		};
 		class utility
 		{
-			file = "\zade_boc\functions\utility";
+			file = "\grad_boc\functions\utility";
 			class EHAnimDone{};
 			class EHGetIn{};
 			class EHGetOut{};
@@ -71,7 +71,7 @@ class CfgFunctions
 		};
 		class arsenal
 		{
-			file = "\zade_boc\functions\arsenal";
+			file = "\grad_boc\functions\arsenal";
 			class arsenalOpened{};
 			class arsenal_onButtonClick{};
 			class arsenal_updateUI{};

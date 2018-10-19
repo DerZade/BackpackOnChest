@@ -7,7 +7,7 @@ class CfgVehicles
 		author = "DerZade";
 		_generalMacro = "grad_boc_weaponHolder";
 		scopeCurator = 0;
-		model = "zade_boc\model.p3d";
+		model = "grad_boc\model.p3d";
 		accuracy = 0.2;
 		mapSize = 1.39;
 		class TransportMagazines {};
@@ -41,7 +41,7 @@ class CfgVehicles
     {
         scope = 2;
         displayName = $STR_grad_boc_moduleDisable_disp;
-        icon ="zade_boc\data\moduleDisable.paa";
+        icon ="grad_boc\data\moduleDisable.paa";
         category = "grad_boc";
         function = "grad_boc_fnc_moduleDisable";
         functionPriority = 0;
@@ -63,7 +63,7 @@ class CfgVehicles
     {
         scope = 2;
         displayName = $STR_grad_boc_moduleAdd_disp;
-        icon ="zade_boc\data\moduleAdd.paa";
+        icon ="grad_boc\data\moduleAdd.paa";
         category = "grad_boc";
         function = "grad_boc_fnc_moduleAdd";
         functionPriority = 0;
@@ -122,7 +122,7 @@ class CfgVehicles
     {
         scope = 2;
         displayName = $STR_grad_boc_moduleOnChest_disp;
-        icon ="zade_boc\data\moduleOnChest.paa";
+        icon ="grad_boc\data\moduleOnChest.paa";
         category = "grad_boc";
         function = "grad_boc_fnc_moduleOnChest";
         functionPriority = 0;

@@ -14,7 +14,7 @@ private _backpack = backpack _center;
 private _action = ["onBack", "onChest"] select (_chestpack isEqualTo "");
 if (!(_backpack isEqualTo "") and !(_chestpack isEqualTo "")) then {_action = "swap";};
 
-(_display displayCtrl 9233) ctrlSetText format ["\zade_boc\data\actions\%1_ca.paa",_action];
+(_display displayCtrl 9233) ctrlSetText format ["\grad_boc\data\actions\%1_ca.paa",_action];
 (_display displayCtrl 9233) ctrlSetTooltip localize format ["STR_grad_boc_%1",_action];
 
 if ((_backpack isEqualTo "") and (_chestpack isEqualTo "")) then {
