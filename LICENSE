@@ -1,0 +1,92 @@
+Copyright (C)  2018 Jonas "DerZade" Schade
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GRAD Arma Public License as published by
+Gruppe Adler; either version 1.1 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Some folders of this project may contain a separate LICENSE file. Should
+that be the case, everything in that folder and all subfolders is subject
+to that license instead.
+________________________________________________________________________________
+
+Creator’s Notes
+
+  None
+
+________________________________________________________________________________
+================================================================================
+                Gruppe Adler Arma Public License (GRAD APL) v1.1
+================================================================================
+
+Disclaimer
+
+  Some bits of this license may make the entire license seem like a joke. But
+  it’s not. We just hate reading boring EULAs. So do not take it lightly. We
+  have a lawyer. And he bites, too!
+________________________________________________________________________________
+
+Intro
+
+  - This license handles rights and permissions of an open source project.
+  - This is meant to foster creative collaboration, not ripping mods and
+    getting credit for it.
+  - The creator can waive/modify parts of this license in his creator’s notes.
+    Both this GRAD APL and the creator’s notes are complementary. When 
+    conflicting, creator’s notes take precedence. He did the work, he calls the
+    shots.
+  - Written consent is necessary to waive parts of this license or the entire
+    license.
+  - When terminology or conditions are open to interpretation, it is assumed
+    that the creator’s interpretation is the only one that matters. 
+    Deal with it. B)
+  - If certain aspects of this license become invalid, copyright law takes over
+    in the areas the license becomes invalid. The other parts of this license
+    shall remain legally binding.
+________________________________________________________________________________
+
+Obligations
+
+  - You must not reupload to a public source (1), ever, at any time under any
+    circumstances other than the ones described in this license. If your granny
+    is about to die because you can’t reupload, you better start measuring the
+    coffin.
+  - Commercial use/exploitation of this modification is not permitted. This
+    overrides the general license change made by Bohemia to grant commercial
+    exploitation of modifications.
+  - When publishing a derivative of this product you may not use a name that
+    might create the impression that your version is an official release.
+________________________________________________________________________________
+
+Rights
+
+  - If you add code to the modification that adds/modifies ingame functionality
+    in a meaningful manner (2), you are free to distribute the new modification
+    as your own.
+  - You are allowed to copy an unmodified version (3) of this modification for
+    personal or clan use if copyright/credit is maintained. 
+  - You can take small parts (2) (functions /scripts) and use them modified or
+    unmodified in your own work. Give credit where credit is due!
+________________________________________________________________________________
+
+Consequences
+
+  If you ignore this license, you are faced with certain doom and everyone will
+  hate you...
+  
+  ...Oh, and perhaps sue you.
+________________________________________________________________________________
+
+Footnotes
+
+  (1) Specifically Steam Workshop, Armaholic, PlayWith6 or any other public mod
+      hosters. If you host the mods on your private/clan server and use programs
+      like Arma3Sync to make them available to a limited user base, this does
+      not apply to you.
+  (2) The creator’s definition is meant. Use your common sense!
+      If you are not sure, ask!
+  (3) You must not just copy the pbos into your own mod. Include the whole mod!
