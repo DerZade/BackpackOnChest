@@ -35,8 +35,8 @@ Gruppe Adler BackpackOnChest (GRAD_boc) - formerly known as _Zade BackpackOnChes
 - Zeus compatibility
 - Preserving attachments/magazines of weapons
 - Support for partially full magazines
-- Button in the arsenal to speed things up
-- Forces the player to walk while carrying an extra backpack
+- Button in the arsenal to speed up BOCing
+- Resticts player movment to a maximum of walking speed while carrying an extra backpack
 - Set of functions for mission/script creators ([Docs](https://github.com/DerZade/BackpackOnChest/wiki))
 
 ## Dependencies:
