@@ -18,7 +18,7 @@
  *
  * Public: No
  */
-params [ ["_unit",objNull,[objNull]], ["_item","",""], ["_ammo",-1,[0]], ["_amount",1,[0]] ];
+params [ ["_unit",objNull,[objNull]], ["_item","",[""]], ["_ammo",-1,[0]], ["_amount",1,[0]] ];
 
 if (isNull _unit || _item isEqualTo "" || _ammo isEqualTo -1 || _amount < 1) exitWith {};
 
