@@ -7,8 +7,8 @@
  *
  * Return Value:
  * Chestpack magazines <ARRAY> [classname,ammo count, amount of mags]
- * (this does not match the normal loadout format, because this function existed
- * before 'getUnitLoadout' was a thing and backwards compatibility and shit)
+ * (this format does not match the normal loadout format, because this function
+ *  existed before 'getUnitLoadout' was a thing and backwards compatibility and shit)
  *
  * Example:
  * [player] call grad_boc_fnc_chestpackMagazines;

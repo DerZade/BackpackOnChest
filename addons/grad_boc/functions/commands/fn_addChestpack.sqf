@@ -3,8 +3,8 @@
  * Adds a chestpack to a unit. If a unit already has one, the old chestpack will be ignored and will be deleted completely.
  *
  * Arguments:
- * 0: Unit  <OBJECT>
- * 1: Backpack Classnam <STRING>
+ * 0: Unit <OBJECT>
+ * 1: Backpack Classname <STRING>
  *
  * Return Value:
  * Nothing

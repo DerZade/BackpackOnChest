@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [player,"FirstAidKit"] call grad_boc_fnc_removeItemFromChestpack;
+ * [player,"FirstAidKit",3] call grad_boc_fnc_removeItemFromChestpack;
  *
  * Public: No
  */

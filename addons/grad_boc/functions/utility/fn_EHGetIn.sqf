@@ -6,7 +6,6 @@
  * 0: unit <OBJECT>
  * 1: position <STRING>
  * 2: vehicle <OBJECT>
- * 3: turret path <ARRAY>
  *
  * Return Value:
  * Nothing

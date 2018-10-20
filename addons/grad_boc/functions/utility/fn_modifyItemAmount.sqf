@@ -1,4 +1,19 @@
-
+/*
+ * Author: DerZade
+ * Helper function for adding/removing items from chespackLoadout.
+ *
+ * Arguments:
+ * 0: unit <OBJECT>
+ * 0: params (depeding on type) <ARRAY>
+ *
+ * Return Value:
+ * Nothing
+ *
+ * Example:
+ * _this call grad_boc_fnc_modifyItemAmount;
+ *
+ * Public: No
+ */
 params [ ["_unit",objNull,[objNull]], ["_params",[],[[]],[2,3]]];
 private _loadout = [_unit] call grad_boc_fnc_chestpackLoadout;
 

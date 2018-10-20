@@ -1,3 +1,19 @@
+/*
+ * Author: DerZade
+ * This function is for backwards compatibility. It redirects any of the
+ * old function with the prefix 'zade_boc' to the new 'grad_boc' function.
+ *
+ * Arguments:
+ * N/A
+ *
+ * Return Value:
+ * N/A
+ *
+ * Example:
+ * N/A
+ *
+ * Public: No
+ */
 if (_fnc_scriptName isEqualTo "") exitWith {};
 
 private _newFunction = format["grad%1",_fnc_scriptName select [4]];

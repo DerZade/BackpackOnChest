@@ -5,7 +5,7 @@
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Item/magazine/weapon classname <STRING>
- * 2: Amount <NUMBER> (optional)
+ * 2: Amount <NUMBER> (optional | default: 1)
  *
  * Return Value:
  * Can add item? <BOOL>
