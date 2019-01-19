@@ -53,7 +53,7 @@ if (count _primary > 0) then {
 
 // validate secondary mag
 if (count _secondary > 0) then {
-	_primary params [["_mag","",[""]], ["_ammo",0,[0]]];
+	_secondary params [["_mag","",[""]], ["_ammo",0,[0]]];
 	if (_mag isEqualTo "") then {
 		_secondary = [];
 	};
