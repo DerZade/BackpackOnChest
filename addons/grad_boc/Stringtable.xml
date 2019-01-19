@@ -6,6 +6,7 @@
 				<Original>Prohibit BackpackOnChest</Original>
 				<English>Prohibit BackpackOnChest</English>
 				<French>Interdire le sac en position ventral </French>
+				<Spanish>Prohibir BackpackOnChest</Spanish>
 				<German>BackpackOnChest verbieten</German>
 				<Japanese>BackpackOnChest を制限</Japanese>
 			</Key>
@@ -13,6 +14,7 @@
 				<Original>Placing this module will prohibit the use of BackpackOnChest.</Original>
 				<English>Placing this module will prohibit the use of BackpackOnChest.</English>
 				<French>Le placement de ce module interdira le positionement du sac sur le ventre.</French>
+				<Spanish>Al poner este módulo se prohibirá el uso de BackpackOnChest</Spanish>
 				<German>Verbietet das benutzen von BackpackOnChest.</German>
 				<Japanese>モジュールにより BackpackOnChest の使用を制限します。</Japanese>
 			</Key>
@@ -20,6 +22,7 @@
 				<Original>Add Chestpack</Original>
 				<English>Add Chestpack</English>
 				<French>Ajouter un sac ventral</French>
+				<Spanish>Agregar mochila al pecho</Spanish>
 				<German>Chestpack hinzufügen</German>
 				<Japanese>チェストパック追加</Japanese>
 			</Key>
@@ -27,6 +30,7 @@
 				<Original>Adds a chestpack (with invenory) to all syncronized Units.</Original>
 				<English>Adds a chestpack (with invenory) to all syncronized Units.</English>
 				<French>Ajoute un sac ventral (avec inventaire) à toutes les unités syncronisées.</French>
+				<Spanish>Agrega una mochila al pecho (con inventario) a todas las unidades sincronizadas</Spanish>
 				<German>Fügt einen Chestpack allen syncronisierten Einheiten hinzu.</German>
 				<Japanese>同期された全ユニットにチェストパック(インベントリ付)を追加します。</Japanese>
 			</Key>
@@ -34,6 +38,7 @@
 				<Original>Backpack on Chest</Original>
 				<English>Backpack on Chest</English>
 				<French>Sac à dos en position ventral</French>
+				<Spanish>Mochila al pecho</Spanish>
 				<German>Rucksack auf den Bauch</German>
 				<Japanese>前側にバックパック</Japanese>
 			</Key>
@@ -41,6 +46,7 @@
 				<Original>Puts current backpack on the chest.</Original>
 				<English>Puts current backpack on the chest.</English>
 				<French>Place le sac à dos actuel en position ventral.</French>
+				<Spanish>Pone la mochila actual en el pecho.</Spanish>
 				<German>Schnallt den aktuellen Rucksack auf den Bauch.</German>
 				<Japanese>現在のバックパックを前側に置きます。</Japanese>
 			</Key>
@@ -50,6 +56,7 @@
 					<Original>Put backpack on chest</Original>
 					<English>Put backpack on chest</English>
 					<French>Mettre le sac à dos en position ventral</French>
+					<Spanish>Poner mochila en el pecho</Spanish>
 					<German>Rucksack auf den Bauch schnallen</German>
 					<Japanese>バックパックを前側にする</Japanese>
 				</Key>
@@ -57,6 +64,7 @@
 					<Original>Put backpack on back</Original>
 					<English>Put backpack on back</English>
 					<French>Remettre le sac à dos ventral dans le dos</French>
+					<Spanish>Poner mochila en la espalda</Spanish>
 					<German>Rucksack auf den Rücken</German>
 					<Japanese>バックパックを後ろ側にする</Japanese>
 				</Key>
@@ -64,6 +72,7 @@
 					<Original>Swap rucksacks</Original>
 					<English>Swap rucksacks</English>
 					<French>Intervertir les sacs</French>
+					<Spanish>Intercambiar mochilas</Spanish>
 					<German>Rucksäcke tauschen</German>
 					<Japanese>バックパックを入れ替え</Japanese>
 				</Key>
