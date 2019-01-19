@@ -28,7 +28,7 @@ if !([_unit,_item,_amount] call grad_boc_fnc_canAddItemToChestpack) exitWith {};
 private _type = ([_item] call BIS_fnc_itemType) select 0;
 
 if (_type isEqualTo "Magazine") exitWith {
-    [_unit,_item,(getNumber (configFile >> "CfgMagazines" >> _item >> "count")), _amount] call grad_boc_fnc_addMagToChestpack;
+    [_unit,_item,([configFile >> "CfgMagazines" >> _item, "count"] call BIS_fnc_returnConfigEntry), _amount] call grad_boc_fnc_addMagToChestpack;
 };
 
 if (_type isEqualTo "Weapon") exitWith {
