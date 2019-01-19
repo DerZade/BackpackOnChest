@@ -22,23 +22,11 @@ if (isNull _unit || _item isEqualTo "" || _amount < 1) exitWith {false};
 if ([_unit] call grad_boc_fnc_chestpack isEqualTo "") exitWith {false};
 
 // calculate space left in chestpack
-private _freeSpace = getNumber(configFile >> "CfgVehicles" >> ([_unit] call grad_boc_fnc_chestpack) >> "maximumLoad") - ([_unit] call grad_boc_fnc_loadChestpack);
+private _maximumLoad = [configFile >> "CfgVehicles" >> ([_unit] call grad_boc_fnc_chestpack), "maximumLoad", 0] call BIS_fnc_returnConfigEntry;
+private _freeSpace = _maximumLoad - ([_unit] call grad_boc_fnc_loadChestpack);
 
-private _itemMass = 0;
-if (isClass (configFile>>"CfgWeapons">> _item >> "ItemInfo")) then {
-    _itemMass = getNumber(configFile>>"CfgWeapons">> _item >> "ItemInfo" >> "Mass");
-};
-if (isClass (configFile>>"CfgWeapons">> _item >> "WeaponSlotsInfo")) then {
-    _itemMass = getNumber(configFile>>"CfgWeapons">> _item >> "WeaponSlotsInfo" >> "Mass")
-};
-if (isClass (configFile>>"CfgMagazines">> _item)) then {
-    _itemMass = getNumber(configFile>>"CfgMagazines">> _item >> "Mass");
-};
-if (isClass (configFile>>"CfgVehicles">> _item)) then  {
-    _itemMass = getNumber(configFile>>"CfgVehicles">> _item >> "Mass");
-};
-if (isClass (configFile>>"CfgGlasses">> _item)) then  {
-    _itemMass = getNumber(configFile>>"CfgGlasses">> _item >> "Mass");
-};
+if (_freeSpace < 0) exitWith {false};
+
+private _itemMass = [_item] call grad_boc_fnc_itemMass;
 
 if (_itemMass * _amount > _freeSpace) then {false} else {true};

@@ -64,6 +64,7 @@ class CfgFunctions
 			class EHGetOut{};
 			class EHHandleDisconnect{};
 			class EHKilled{};
+			class itemMass{};
 			class modifyItemAmount{};
 			class moduleAdd{};
 			class moduleOnChest{};
