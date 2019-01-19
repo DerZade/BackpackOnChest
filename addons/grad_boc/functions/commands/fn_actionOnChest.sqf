@@ -29,8 +29,6 @@ if ((_backpack isEqualTo "") or !(([_player] call grad_boc_fnc_chestpack) isEqua
 // add items
 [_player, _backpackLoadout] call grad_boc_fnc_setChestpackLoadout;
 
-// remove backpack
-
 private _weaponHolder = objectParent ([_player] call grad_boc_fnc_chestpackContainer); 
  
 clearBackpackCargoGlobal _weaponHolder; 

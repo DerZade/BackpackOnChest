@@ -4,7 +4,7 @@
  *
  * Arguments:
  * 0: unit <OBJECT>
- * 0: params (depeding on type) <ARRAY>
+ * 1: params (depeding on type) <ARRAY>
  *
  * Return Value:
  * Nothing
