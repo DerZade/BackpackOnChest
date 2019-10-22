@@ -39,11 +39,17 @@ if ((_backpack isEqualTo "") or !(([_player] call zade_boc_fnc_chestpack) isEqua
      _backpackitems pushBack (_x select 1);
      _backpackitems pushBack (_x select 2);
      _backpackitems pushBack (_x select 3);
-     _backpackitems pushBack (_x select 5);
+     _backpackitems pushBack (_x select 6);
 
      //add magazine
      if !((_x select 4) isEqualTo []) then {
           private _mag = +(_x select 4);
+          _mag pushBack 1;
+          _backpackmags pushBack _mag;
+     };
+     //secondary mag
+     if !((_x select 5) isEqualTo []) then {
+          private _mag = +(_x select 5);
           _mag pushBack 1;
           _backpackmags pushBack _mag;
      };
