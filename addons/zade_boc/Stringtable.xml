@@ -5,6 +5,7 @@
 			<Key ID="str_zade_boc_moduleDisable_disp">
 				<Original>Prohibit BackpackOnChest</Original>
 				<English>Prohibit BackpackOnChest</English>
+				<Chinese>禁用胸前背包</Chinese>
 				<French>Interdire le sac en position ventral </French>
 				<German>BackpackOnChest verbieten</German>
 				<Japanese>BackpackOnChest を制限</Japanese>
@@ -12,6 +13,7 @@
                <Key ID="str_zade_boc_moduleDisable_desc">
 				<Original>Placing this module will prohibit the use of BackpackOnChest.</Original>
 				<English>Placing this module will prohibit the use of BackpackOnChest.</English>
+		       		<Chinese>啟用將會禁用胸前背包功能</Chinese>
 		       		<French>Le placement de ce module interdira le positionement du sac sur le ventre.</French>
 				<German>Verbietet das benutzen von BackpackOnChest.</German>
 				<Japanese>モジュールにより BackpackOnChest の使用を制限します。</Japanese>
@@ -19,6 +21,7 @@
 			<Key ID="str_zade_boc_moduleAdd_disp">
 				<Original>Add Chestpack</Original>
 				<English>Add Chestpack</English>
+				<Chinese>增加胸前背包</Chinese>
 				<French>Ajouter un sac ventral</French>
 				<German>Chestpack hinzufügen</German>
 				<Japanese>チェストパック追加</Japanese>
@@ -26,6 +29,7 @@
 			<Key ID="str_zade_boc_moduleAdd_desc">
 				<Original>Adds a chestpack (with invenory) to all syncronized Units.</Original>
 				<English>Adds a chestpack (with invenory) to all syncronized Units.</English>
+				<Chinese>增加胸前背包（包括內容物）給全部同步中的單位。</Chinese>
 				<French>Ajoute un sac ventral (avec inventaire) à toutes les unités syncronisées.</French>
 				<German>Fügt einen Chestpack allen syncronisierten Einheiten hinzu.</German>
 				<Japanese>同期された全ユニットにチェストパック(インベントリ付)を追加します。</Japanese>
@@ -33,6 +37,7 @@
 			<Key ID="str_zade_boc_moduleOnChest_disp">
 				<Original>Backpack on Chest</Original>
 				<English>Backpack on Chest</English>
+				<Chinese>胸前背包</Chinese>
 				<French>Sac à dos en position ventral</French>
 				<German>Rucksack auf den Bauch</German>
 				<Japanese>前側にバックパック</Japanese>
@@ -40,6 +45,7 @@
 			<Key ID="str_zade_boc_moduleOnChest_desc">
 				<Original>Puts current backpack on the chest.</Original>
 				<English>Puts current backpack on the chest.</English>
+				<Chinese>把目前背包放置胸前</Chinese>
 				<French>Place le sac à dos actuel en position ventral.</French>
 				<German>Schnallt den aktuellen Rucksack auf den Bauch.</German>
 				<Japanese>現在のバックパックを前側に置きます。</Japanese>
@@ -49,6 +55,7 @@
 				<Key ID="str_zade_boc_OnChest">
 					<Original>Put backpack on chest</Original>
 					<English>Put backpack on chest</English>
+					<Chinese>把背包放置胸前</Chinese>
 					<French>Mettre le sac à dos en position ventral</French>
 					<German>Rucksack auf den Bauch schnallen</German>
 					<Japanese>バックパックを前側にする</Japanese>
@@ -56,6 +63,7 @@
 				<Key ID="str_zade_boc_OnBack">
 					<Original>Put backpack on back</Original>
 					<English>Put backpack on back</English>
+					<Chinese>把背包背著</Chinese>
 					<French>Remettre le sac à dos ventral dans le dos</French>
 					<German>Rucksack auf den Rücken</German>
 					<Japanese>バックパックを後ろ側にする</Japanese>
@@ -63,6 +71,7 @@
 				<Key ID="str_zade_boc_Swap">
 					<Original>Swap rucksacks</Original>
 					<English>Swap rucksacks</English>
+					<Chinese>前後背包交換</Chinese>
 					<French>Intervertir les sacs</French>
 					<German>Rucksäcke tauschen</German>
 					<Japanese>バックパックを入れ替え</Japanese>
