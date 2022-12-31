@@ -1,3 +1,4 @@
+
 /*
  * Author: DerZade
  * Applies given radio-settings to the backpack radio of the unit.
@@ -17,8 +18,14 @@
 params ["_player","_settings"];
 
 //only if TFAR is loaded
+
 if (isClass(configFile >> "cfgPatches" >> "task_force_radio")) exitWith {
      //apply settings
      private _radio = _player call TFAR_fnc_backpackLr;
-     [_radio select 0, _radio select 1, _settings] call TFAR_fnc_setLrSettings;
+     //Changed API in TFAR 1.0
+     if (isClass(configFile >> "cfgPatches" >> "tfar_core")) then {
+         [_radio, _settings] call TFAR_fnc_setLrSettings;     
+     } else {
+         [_radio select 0, _radio select 1, _settings] call TFAR_fnc_setLrSettings;
+     };
 };
